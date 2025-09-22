@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            color: #FFA500;
+            text-align: center;
+            border-bottom: 2px solid #FFA500;
+        }
+        .course-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .course-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .course-card:hover {
+            transform: translateY(-5px);
+        }
+        .course-card a {
+            text-decoration: none;
+            color: #1E90FF;
+            font-size: 1.5em;
+            font-weight: bold;
+            display: block; /* Make the whole card clickable */
+        }
+    </style>
+    <script>
+        // Track last visited page for resuming where you left off.
+        document.addEventListener('DOMContentLoaded', () => {
+            const lastPage = localStorage.getItem('lastVisitedPage');
+            // 'index.html' se open hone par, agar koi last page save hai to wahan redirect karo.
+            if (window.location.pathname.endsWith('index.html') && lastPage && lastPage.includes('.html') && lastPage !== window.location.href) {
+                // History API trick: replace the current state and navigate without showing the full path.
+                // Note: The 'path' will still be in the URL bar, but it creates a single point of entry.
+                // Since this is a local setup, full 'xyz.com' masking is not possible, 
+                // but this handles the state resume correctly.
+                history.replaceState({}, document.title, lastPage);
+                window.location.reload(); // Reloads to the last visited state
+            }
+            window.addEventListener('beforeunload', () => {
+                localStorage.setItem('lastVisitedPage', window.location.href);
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>My Courses</h1>
+    <div class="course-list">
+        
+    <div class="course-card">
+        <a href="favorites.html">❤️ My Favourites</a>
+    </div>
+    
+        <div class="course-card">
+            <a href="Reas Spl-20 _Live_VOD_.html">Reas Spl 20  Live Vod </a>
+        </div>
+        
+        <div class="course-card">
+            <a href="Maths Spl_ _Recorded Batch_RAKESH_YADAV.html">Maths Spl   Recorded Batch Rakesh Yadav</a>
+        </div>
+        
+        <div class="course-card">
+            <a href="GS Spl-17 _Live_VOD_.html">Gs Spl 17  Live Vod </a>
+        </div>
+        
+        <div class="course-card">
+            <a href="English Spl-10 (JAIDEEP).html">English Spl 10 (Jaideep)</a>
+        </div>
+        
+        <div class="course-card">
+            <a href="GS Spl-16 _ABHISHEK.html">Gs Spl 16  Abhishek</a>
+        </div>
+        
+    </div>
+</body>
+</html>
