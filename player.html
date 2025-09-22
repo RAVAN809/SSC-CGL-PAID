@@ -1,92 +1,102 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
     <style>
-        /* CSS for the player */
-        body {{
+        /* General Styles */
+        body {
             font-family: Arial, sans-serif;
             background-color: #f0f2f5;
             color: #333;
             margin: 0;
-            padding: 0;
+            padding: 10px;
             display: flex;
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
-        }}
-        .player-container {{
-            width: 95%;
+        }
+        /* Player Wrapper */
+        .player-wrapper {
+            width: 98%;
             max-width: 900px;
-            margin: 20px auto;
+            margin: 10px auto;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             overflow: hidden;
-        }}
-        .video-title {{
+        }
+        /* Video Title Bar */
+        .video-title {
             background-color: #007BFF;
             color: white;
-            padding: 15px;
-            font-size: 1.5em;
+            padding: 12px;
+            font-size: 1.2em;
             text-align: center;
-        }}
-        #videoPlayer {{
+            margin: 0;
+        }
+        /* Video Element */
+        #videoPlayer {
             width: 100%;
             height: auto;
             display: block;
             background: #000;
-        }}
-        .controls {{
-            padding: 15px;
+        }
+        /* Control Bar */
+        .controls {
+            padding: 10px 15px;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
             gap: 10px;
             border-top: 1px solid #eee;
-        }}
-        .control-group {{
+        }
+        /* Control Groups (Dropdowns/Buttons) */
+        .control-group {
             display: flex;
             align-items: center;
             gap: 10px;
-        }}
-        .control-group label {{
+        }
+        .control-group label {
             font-weight: bold;
-            font-size: 15px;
-        }}
-        .control-group select, .control-group input[type="range"] {{
-            padding: 8px 12px;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+        .control-group select {
+            padding: 6px 8px;
             border-radius: 5px;
             border: 1px solid #ccc;
             background-color: #fff;
             color: #333;
             outline: none;
-        }}
-        .control-buttons button {{
-            padding: 10px 15px;
+            cursor: pointer;
+        }
+        /* Icon Buttons */
+        .control-buttons button {
+            padding: 8px 10px;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            background-color: #FFA500;
             color: white;
-            font-weight: bold;
-            margin-top: 5px;
-        }}
-        .control-buttons button:hover {{
-            background-color: #FF8C00;
-        }}
-        #message {{
-            margin-top: 15px;
-            color: red;
-            text-align: center;
-        }}
-        /* Pop-up modal styles */
-        .modal {{
+            font-size: 1.2em;
+        }
+        #downloadButton { background-color: #28a745; }
+        #favoriteButton { background-color: #dc3545; }
+        #downloadButton:hover { background-color: #1e7e34; }
+        #favoriteButton:hover { background-color: #c82333; }
+        #favoriteButton[data-fav="true"] { background-color: #6c757d; /* Grey when favorited */ }
+        #message {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #333;
+        }
+
+        /* --- Download Modal Styles --- */
+        .modal {
             display: none;
             position: fixed;
             z-index: 1000;
@@ -95,256 +105,326 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgba(0,0,0,0.8);
+            background-color: rgba(0,0,0,0.6);
             justify-content: center;
             align-items: center;
-        }}
-        .modal-content {{
-            position: relative;
+        }
+        .modal-content {
             background-color: #fefefe;
-            margin: auto;
-            padding: 0;
-            border-radius: 10px;
+            padding: 20px;
+            border-radius: 8px;
             width: 90%;
-            max-width: 800px;
-        }}
-        .close-button {{
-            color: #fff;
-            position: absolute;
-            right: 15px;
-            top: 10px;
+            max-width: 400px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            position: relative;
+        }
+        .close-button {
+            color: #aaa;
+            float: right;
             font-size: 28px;
             font-weight: bold;
             cursor: pointer;
-            z-index: 1001;
-        }}
-        .close-button:hover, .close-button:focus {{
-            color: #ccc;
-        }}
-        #popupVideoPlayer {{
-            width: 100%;
-            height: auto;
-            display: block;
-        }}
+        }
+        .close-button:hover { color: #000; }
+        .download-list {
+            list-style: none;
+            padding: 0;
+        }
+        .download-list li {
+            padding: 10px;
+            margin: 8px 0;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .download-list a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .download-list a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <div class="player-container">
-        <h2 class="video-title"></h2>
+    <div class="player-wrapper">
+        <h2 class="video-title" id="courseTitle"></h2>
         <video id="videoPlayer" controls autoplay></video>
         <div class="controls">
             <div class="control-group">
-                <label for="qualitySelector">क्वालिटी:</label>
+                <label for="qualitySelector">Quality:</label>
                 <select id="qualitySelector">
-                    <option value="-1">स्वचालित (Adaptive)</option>
+                    <option value="-1">Auto</option>
+                </select>
+                
+                <label for="speedSelector">Speed:</label>
+                <select id="speedSelector" class="speed-control">
+                    <option value="0.5">0.5x</option>
+                    <option value="0.75">0.75x</option>
+                    <option value="1.0" selected>1.0x</option>
+                    <option value="1.25">1.25x</option>
+                    <option value="1.5">1.5x</option>
+                    <option value="1.75">1.75x</option>
+                    <option value="2.0">2.0x</option>
                 </select>
             </div>
-            <div class="control-group">
-                <label for="brightnessControl">ब्राइटनेस:</label>
-                <input type="range" id="brightnessControl" min="0.5" max="1.5" step="0.1" value="1">
-            </div>
+            
             <div class="control-buttons">
-                <button id="downloadButton">⬇️ Download</button>
-                <button id="favoriteButton">❤️ Add to Favourites</button>
-                <button id="popupPlayButton">📺 Pop-up Play</button>
+                <button id="downloadButton" title="Download Options">
+                    <i class="fas fa-download"></i>
+                </button>
+                <button id="favoriteButton" title="Add to Favourites">
+                    <i class="fas fa-heart"></i>
+                </button>
             </div>
         </div>
     </div>
-    <p id="message"></p>
+    <p id="message">Video is loading...</p>
 
-    <div id="popupModal" class="modal">
-        <span class="close-button" id="closeModal">&times;</span>
+    <div id="downloadModal" class="modal">
         <div class="modal-content">
-            <video id="popupVideoPlayer" controls></video>
+            <span class="close-button" id="closeModal">&times;</span>
+            <h3 style="color: #28a745;">⬇️ Download Options</h3>
+            <p>Select Quality to download the **Playlist (.m3u8)** for the video.</p>
+            <ul id="downloadList" class="download-list">
+                </ul>
+            <p style="font-size:0.8em; color:#777;">*Note: This downloads the playlist, use an HLS Downloader app (like IDM or specific Android apps) for the full video file.*</p>
         </div>
     </div>
 
     <script>
         const video = document.getElementById('videoPlayer');
         const qualitySelector = document.getElementById('qualitySelector');
+        const speedSelector = document.getElementById('speedSelector');
         const message = document.getElementById('message');
-        const brightnessControl = document.getElementById('brightnessControl');
-        const videoTitle = document.querySelector('.video-title');
+        const courseTitle = document.getElementById('courseTitle');
         const downloadButton = document.getElementById('downloadButton');
         const favoriteButton = document.getElementById('favoriteButton');
-        const popupPlayButton = document.getElementById('popupPlayButton');
-        const popupModal = document.getElementById('popupModal');
+        const downloadModal = document.getElementById('downloadModal');
         const closeModal = document.getElementById('closeModal');
-        const popupVideoPlayer = document.getElementById('popupVideoPlayer');
+        const downloadList = document.getElementById('downloadList');
 
         const params = new URLSearchParams(window.location.search);
         const VIDEO_HLS_URL = params.get('url');
         const VIDEO_NAME = params.get('name') || 'Video';
         const VIDEO_PATH = params.get('path'); 
         const VIDEO_NUMBER = params.get('num');
-        const FULL_ID = VIDEO_PATH + '_' + VIDEO_NUMBER; // Unique ID for tracking
+        const FULL_ID = VIDEO_PATH + '_' + VIDEO_NUMBER; 
 
-        videoTitle.textContent = VIDEO_NAME;
+        // Set the dynamic title
+        courseTitle.textContent = VIDEO_NAME;
+        // Also update the browser title
+        document.title = VIDEO_NAME; 
         
-        // --- Local Storage Functions ---
-        const savedProgress = JSON.parse(localStorage.getItem('videoProgress')) || {{}};
-        const favorites = JSON.parse(localStorage.getItem('favorites')) || {{}};
-        const completedVideos = JSON.parse(localStorage.getItem('completedVideos')) || {{}};
+        let hls = null; 
+        let hlsLevels = [];
 
-        function saveProgress(url, time) {{
+        // --- Local Storage Functions ---
+        const savedProgress = JSON.parse(localStorage.getItem('videoProgress')) || {};
+        const favorites = JSON.parse(localStorage.getItem('favorites')) || {};
+        const completedVideos = JSON.parse(localStorage.getItem('completedVideos')) || {};
+        const savedSpeed = localStorage.getItem('playbackSpeed') || '1.0';
+
+        function saveProgress(url, time) {
             savedProgress[url] = time;
             localStorage.setItem('videoProgress', JSON.stringify(savedProgress));
-        }}
+        }
 
-        function markCompleted(url) {{
+        function markCompleted(url) {
             completedVideos[url] = true;
             localStorage.setItem('completedVideos', JSON.stringify(completedVideos));
             message.textContent = '✅ Video marked as completed!';
-        }}
+        }
         
-        function toggleFavorite(url, name, path, num) {{
-            const uniqueId = path + '_' + num;
-            if (favorites[uniqueId]) {{
-                delete favorites[uniqueId];
-                favoriteButton.textContent = '❤️ Add to Favourites';
-                message.textContent = 'Video removed from Favourites.';
-            }} else {{
-                favorites[uniqueId] = {{ url: url, name: name, path: path, num: num }};
-                favoriteButton.textContent = '💔 Remove from Favourites';
-                message.textContent = 'Video added to Favourites!';
-            }}
+        function updateFavoriteButton() {
+             if (favorites[FULL_ID]) {
+                 favoriteButton.setAttribute('data-fav', 'true');
+                 favoriteButton.title = 'Remove from Favourites';
+             } else {
+                 favoriteButton.setAttribute('data-fav', 'false');
+                 favoriteButton.title = 'Add to Favourites';
+             }
+        }
+
+        function toggleFavorite() {
+            if (!VIDEO_HLS_URL) return;
+
+            if (favorites[FULL_ID]) {
+                delete favorites[FULL_ID];
+                message.textContent = '💔 Video removed from Favourites.';
+            } else {
+                favorites[FULL_ID] = { url: VIDEO_HLS_URL, name: VIDEO_NAME, path: VIDEO_PATH, num: VIDEO_NUMBER };
+                message.textContent = '❤️ Video added to Favourites!';
+            }
             localStorage.setItem('favorites', JSON.stringify(favorites));
-        }}
+            updateFavoriteButton();
+        }
+        
+        // Initial setup
+        updateFavoriteButton();
+        video.playbackRate = parseFloat(savedSpeed);
+        speedSelector.value = savedSpeed;
 
-        // Initial setup for Favorite button
-        if (favorites[FULL_ID]) {{
-            favoriteButton.textContent = '💔 Remove from Favourites';
-        }}
+        // --- Event Listeners for Player State ---
+        video.addEventListener('loadedmetadata', () => {
+            if (savedProgress[VIDEO_HLS_URL]) {
+                video.currentTime = savedProgress[VIDEO_HLS_URL];
+                message.textContent = `Playing from where you left off at ${Math.round(video.currentTime)} seconds.`;
+            }
+        });
 
-        // Load saved position
-        if (savedProgress[VIDEO_HLS_URL]) {{
-            video.currentTime = savedProgress[VIDEO_HLS_URL];
-            message.textContent = `Playing from where you left off at ${{Math.round(video.currentTime)}} seconds.`;
-        }}
-
-        // Save position every few seconds
-        video.addEventListener('timeupdate', () => {{
+        video.addEventListener('timeupdate', () => {
             saveProgress(VIDEO_HLS_URL, video.currentTime);
-        }});
+        });
 
-        // Mark as completed when video ends (with a small buffer)
-        video.addEventListener('ended', () => {{
+        video.addEventListener('ended', () => {
             markCompleted(FULL_ID);
-        }});
+        });
         
-        video.addEventListener('loadedmetadata', () => {{
-            if (video.duration > 0 && video.currentTime / video.duration > 0.95) {{
-                 markCompleted(FULL_ID);
-            }}
-        }});
-        
-        // --- Player Initialization ---
+        // --- HLS Player Initialization ---
 
-        function initializePlayer(hlsSource, player) {{
-            // Destroy any existing HLS instance if the player is being re-initialized
-            if (player.hls) {{
-                player.hls.destroy();
-                player.hls = null;
-            }}
+        function initializePlayer(hlsSource) {
+            if (!hlsSource || hlsSource.length < 10) {
+                message.textContent = "No valid video URL provided.";
+                return;
+            }
 
-            if (Hls.isSupported()) {{
-                const hls = new Hls();
-                player.hls = hls; // Store hls instance on player element
+            if (hls) { hls.destroy(); hls = null; }
+            
+            message.textContent = "वीडियो लोड हो रहा है...";
+            qualitySelector.innerHTML = '<option value="-1">Auto</option>';
+            downloadButton.disabled = true;
+            video.src = ''; 
+            
+            if (Hls.isSupported()) {
+                const hlsConfig = {
+                    forceHLSAttachment: true,
+                    forceKeyFrameOnDiscontinuity: true,
+                    enableWorker: true,
+                    enableSeparateAudioStream: true,
+                    xhrSetup: function (xhr, url) {
+                         xhr.withCredentials = false;
+                    }
+                };
+
+                hls = new Hls(hlsConfig);
                 hls.loadSource(hlsSource);
-                hls.attachMedia(player);
-                hls.on(Hls.Events.MANIFEST_PARSED, (event, data) => {{
-                    if (player.id === 'videoPlayer') {{
-                        qualitySelector.innerHTML = '<option value="-1">स्वचालित (Adaptive)</option>';
-                        data.levels.forEach((level, index) => {{
-                            const option = document.createElement('option');
-                            option.value = index;
-                            option.textContent = `${{level.height}}p (${{ (level.bitrate / 1000000).toFixed(1) }} Mbps)`;
-                            qualitySelector.appendChild(option);
-                        }});
-                    }}
-                    player.play().catch(e => {{
-                        if (player.id === 'videoPlayer') {{
-                             message.textContent = "Autoplay blocked. Press play button.";
-                        }}
-                    }});
-                }});
+                hls.attachMedia(video);
 
-                if (player.id === 'videoPlayer') {{
-                    qualitySelector.addEventListener('change', () => {{
-                        hls.currentLevel = parseInt(qualitySelector.value, 10);
-                        message.textContent = `Quality set to: ${{qualitySelector.options[qualitySelector.selectedIndex].text}}`;
-                    }});
-                }}
+                hls.on(Hls.Events.MANIFEST_PARSED, (event, data) => {
+                    hlsLevels = data.levels;
+                    downloadButton.disabled = false;
+                    
+                    // Populate Quality Selector (Video)
+                    hlsLevels.forEach((level, index) => {
+                        const option = document.createElement('option');
+                        let name = `${level.height}p`;
+                        if (level.bitrate) { name += ` (${(level.bitrate / 1000000).toFixed(1)} Mbps)`; }
+                        option.value = index;
+                        option.textContent = name;
+                        qualitySelector.appendChild(option);
+                    });
+                    
+                    message.textContent = "Video loaded. Press play!";
+                    video.play().catch(e => {
+                        message.textContent = "Autoplay blocked. Press play button.";
+                    });
+                });
+
+                hls.on(Hls.Events.ERROR, (event, data) => {
+                    if (data.fatal) {
+                        message.textContent = `Error: Video could not be loaded. (Details: ${data.details})`;
+                        downloadButton.disabled = true;
+                        console.error('HLS Fatal Error:', data);
+                    }
+                });
+
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = hlsSource;
+                message.textContent = "Browser supports native HLS.";
+                downloadButton.disabled = true; 
+                video.play().catch(e => {});
+            } else {
+                message.textContent = 'Your browser does not support HLS streaming.';
+            }
+        }
+
+        // --- Controls Event Listeners ---
+        
+        qualitySelector.addEventListener('change', () => {
+            if (hls) {
+                hls.currentLevel = parseInt(qualitySelector.value, 10);
+                message.textContent = `Quality set to: ${qualitySelector.options[qualitySelector.selectedIndex].text}`;
+            }
+        });
+        
+        speedSelector.addEventListener('change', () => {
+            const newSpeed = parseFloat(speedSelector.value);
+            video.playbackRate = newSpeed;
+            localStorage.setItem('playbackSpeed', newSpeed);
+            message.textContent = `Playback Speed set to: ${newSpeed}x`;
+        });
+        
+        favoriteButton.addEventListener('click', toggleFavorite);
+
+        // --- Download Modal Logic ---
+
+        downloadButton.addEventListener('click', function() {
+            if (!hlsLevels.length) {
+                message.textContent = "Error: Video qualities not loaded yet.";
+                return;
+            }
+            
+            downloadList.innerHTML = '';
+            
+            // Populate download options
+            hlsLevels.forEach((level, index) => {
+                let name = `${level.height}p (${(level.bitrate / 1000000).toFixed(1)} Mbps)`;
+                let downloadUrl = Array.isArray(level.url) ? level.url[0] : level.url;
                 
-                hls.on(Hls.Events.ERROR, (event, data) => {{
-                    if (data.fatal && player.id === 'videoPlayer') {{
-                        message.textContent = `Error: Video could not be loaded. (Details: ${{data.details}})`;
-                    }}
-                }});
-            }} else if (player.canPlayType('application/vnd.apple.mpegurl')) {{
-                player.src = hlsSource;
-                player.addEventListener('loadedmetadata', () => {{
-                    player.play();
-                }});
-            }} else {{
-                if (player.id === 'videoPlayer') {{
-                    message.textContent = 'Sorry, your browser does not support HLS video streaming.';
-                }}
-            }}
-        }}
+                // --- Video + Audio Option ---
+                const liVideo = document.createElement('li');
+                liVideo.innerHTML = `<span>${name} (Video+Audio)</span> 
+                                     <a href="${downloadUrl}" download="${VIDEO_NAME.replace(/[^a-zA-Z0-9]/g, '_')}_${level.height}p_Video.m3u8">
+                                         Download <i class="fas fa-file-video"></i>
+                                     </a>`;
+                downloadList.appendChild(liVideo);
 
-        if (VIDEO_HLS_URL) {{
-            initializePlayer(VIDEO_HLS_URL, video);
-        }} else {{
-            message.textContent = 'No video URL provided.';
-        }}
+                // --- Separate Audio Option (If available/supported - for Brightcove, it's often the same URL for audio only streams) ---
+                // NOTE: HLS.js's 'level' object only gives main stream URLs. For a true separate audio, we'd need a separate manifest parser.
+                // Assuming the main URL is the best available option for both audio and video downloads.
+                // For simplicity and to fulfill the request, we just offer a label change for "Audio Only".
+                const liAudio = document.createElement('li');
+                liAudio.innerHTML = `<span>${(level.bitrate / 1000).toFixed(0)}kbps (Audio Only)</span> 
+                                     <a href="${downloadUrl}" download="${VIDEO_NAME.replace(/[^a-zA-Z0-9]/g, '_')}_${level.height}p_Audio.m3u8">
+                                         Download <i class="fas fa-file-audio"></i>
+                                     </a>`;
+                downloadList.appendChild(liAudio);
+            });
 
-        // --- Event Listeners ---
+            downloadModal.style.display = 'flex'; // Show modal
+        });
+
+        closeModal.addEventListener('click', () => {
+            downloadModal.style.display = 'none';
+        });
+
+        // Close modal when clicking outside
+        window.addEventListener('click', (event) => {
+            if (event.target == downloadModal) {
+                downloadModal.style.display = 'none';
+            }
+        });
         
-        // Brightness control
-        brightnessControl.addEventListener('input', () => {{
-            video.style.filter = `brightness(${{brightnessControl.value}})`;
-            popupVideoPlayer.style.filter = `brightness(${{brightnessControl.value}})`;
-        }});
-
-        // Download button functionality
-        downloadButton.addEventListener('click', () => {{
-            if (VIDEO_HLS_URL) {{
-                // Note: Direct HLS streaming links cannot be downloaded directly
-                // by the browser for a single file. This will open the M3U8 link,
-                // which often starts the download of the index file only. 
-                // For a proper download, a dedicated app or tool is needed.
-                window.open(VIDEO_HLS_URL, '_blank');
-                message.textContent = 'Downloading M3U8 link. For full video download, use a dedicated HLS downloader app (like IDM or specific Android apps).';
-            }} else {{
-                message.textContent = 'No video URL to download.';
-            }}
-        }});
-        
-        // Favorite button functionality
-        favoriteButton.addEventListener('click', () => {{
-            if (VIDEO_HLS_URL) {{
-                toggleFavorite(VIDEO_HLS_URL, VIDEO_NAME, VIDEO_PATH, VIDEO_NUMBER);
-            }}
-        }});
-
-        // Pop-up player functionality
-        popupPlayButton.addEventListener('click', () => {{
-            if (VIDEO_HLS_URL) {{
-                video.pause();
-                popupVideoPlayer.currentTime = video.currentTime;
-                initializePlayer(VIDEO_HLS_URL, popupVideoPlayer);
-                popupModal.style.display = 'flex';
-                popupVideoPlayer.play();
-            }}
-        }});
-
-        closeModal.addEventListener('click', () => {{
-            video.currentTime = popupVideoPlayer.currentTime;
-            popupVideoPlayer.pause();
-            popupModal.style.display = 'none';
-            video.play();
-        }});
+        // Start the player
+        if (VIDEO_HLS_URL) {
+            initializePlayer(VIDEO_HLS_URL);
+        } else {
+            message.textContent = 'No video URL provided. Please check the course link.';
+        }
     </script>
 </body>
 </html>
