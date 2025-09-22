@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <style>
+        /* CSS for the player */
+        body {{
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }}
+        .player-container {{
+            width: 95%;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }}
+        .video-title {{
+            background-color: #007BFF;
+            color: white;
+            padding: 15px;
+            font-size: 1.5em;
+            text-align: center;
+        }}
+        #videoPlayer {{
+            width: 100%;
+            height: auto;
+            display: block;
+            background: #000;
+        }}
+        .controls {{
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            border-top: 1px solid #eee;
+        }}
+        .control-group {{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }}
+        .control-group label {{
+            font-weight: bold;
+            font-size: 15px;
+        }}
+        .control-group select, .control-group input[type="range"] {{
+            padding: 8px 12px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            color: #333;
+            outline: none;
+        }}
+        .control-buttons button {{
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #FFA500;
+            color: white;
+            font-weight: bold;
+            margin-top: 5px;
+        }}
+        .control-buttons button:hover {{
+            background-color: #FF8C00;
+        }}
+        #message {{
+            margin-top: 15px;
+            color: red;
+            text-align: center;
+        }}
+        /* Pop-up modal styles */
+        .modal {{
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+        }}
+        .modal-content {{
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 0;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 800px;
+        }}
+        .close-button {{
+            color: #fff;
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1001;
+        }}
+        .close-button:hover, .close-button:focus {{
+            color: #ccc;
+        }}
+        #popupVideoPlayer {{
+            width: 100%;
+            height: auto;
+            display: block;
+        }}
+    </style>
+</head>
+<body>
+    <div class="player-container">
+        <h2 class="video-title"></h2>
+        <video id="videoPlayer" controls autoplay></video>
+        <div class="controls">
+            <div class="control-group">
+                <label for="qualitySelector">क्वालिटी:</label>
+                <select id="qualitySelector">
+                    <option value="-1">स्वचालित (Adaptive)</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="brightnessControl">ब्राइटनेस:</label>
+                <input type="range" id="brightnessControl" min="0.5" max="1.5" step="0.1" value="1">
+            </div>
+            <div class="control-buttons">
+                <button id="downloadButton">⬇️ Download</button>
+                <button id="favoriteButton">❤️ Add to Favourites</button>
+                <button id="popupPlayButton">📺 Pop-up Play</button>
+            </div>
+        </div>
+    </div>
+    <p id="message"></p>
+
+    <div id="popupModal" class="modal">
+        <span class="close-button" id="closeModal">&times;</span>
+        <div class="modal-content">
+            <video id="popupVideoPlayer" controls></video>
+        </div>
+    </div>
+
+    <script>
+        const video = document.getElementById('videoPlayer');
+        const qualitySelector = document.getElementById('qualitySelector');
+        const message = document.getElementById('message');
+        const brightnessControl = document.getElementById('brightnessControl');
+        const videoTitle = document.querySelector('.video-title');
+        const downloadButton = document.getElementById('downloadButton');
+        const favoriteButton = document.getElementById('favoriteButton');
+        const popupPlayButton = document.getElementById('popupPlayButton');
+        const popupModal = document.getElementById('popupModal');
+        const closeModal = document.getElementById('closeModal');
+        const popupVideoPlayer = document.getElementById('popupVideoPlayer');
+
+        const params = new URLSearchParams(window.location.search);
+        const VIDEO_HLS_URL = params.get('url');
+        const VIDEO_NAME = params.get('name') || 'Video';
+        const VIDEO_PATH = params.get('path'); 
+        const VIDEO_NUMBER = params.get('num');
+        const FULL_ID = VIDEO_PATH + '_' + VIDEO_NUMBER; // Unique ID for tracking
+
+        videoTitle.textContent = VIDEO_NAME;
+        
+        // --- Local Storage Functions ---
+        const savedProgress = JSON.parse(localStorage.getItem('videoProgress')) || {{}};
+        const favorites = JSON.parse(localStorage.getItem('favorites')) || {{}};
+        const completedVideos = JSON.parse(localStorage.getItem('completedVideos')) || {{}};
+
+        function saveProgress(url, time) {{
+            savedProgress[url] = time;
+            localStorage.setItem('videoProgress', JSON.stringify(savedProgress));
+        }}
+
+        function markCompleted(url) {{
+            completedVideos[url] = true;
+            localStorage.setItem('completedVideos', JSON.stringify(completedVideos));
+            message.textContent = '✅ Video marked as completed!';
+        }}
+        
+        function toggleFavorite(url, name, path, num) {{
+            const uniqueId = path + '_' + num;
+            if (favorites[uniqueId]) {{
+                delete favorites[uniqueId];
+                favoriteButton.textContent = '❤️ Add to Favourites';
+                message.textContent = 'Video removed from Favourites.';
+            }} else {{
+                favorites[uniqueId] = {{ url: url, name: name, path: path, num: num }};
+                favoriteButton.textContent = '💔 Remove from Favourites';
+                message.textContent = 'Video added to Favourites!';
+            }}
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+        }}
+
+        // Initial setup for Favorite button
+        if (favorites[FULL_ID]) {{
+            favoriteButton.textContent = '💔 Remove from Favourites';
+        }}
+
+        // Load saved position
+        if (savedProgress[VIDEO_HLS_URL]) {{
+            video.currentTime = savedProgress[VIDEO_HLS_URL];
+            message.textContent = `Playing from where you left off at ${{Math.round(video.currentTime)}} seconds.`;
+        }}
+
+        // Save position every few seconds
+        video.addEventListener('timeupdate', () => {{
+            saveProgress(VIDEO_HLS_URL, video.currentTime);
+        }});
+
+        // Mark as completed when video ends (with a small buffer)
+        video.addEventListener('ended', () => {{
+            markCompleted(FULL_ID);
+        }});
+        
+        video.addEventListener('loadedmetadata', () => {{
+            if (video.duration > 0 && video.currentTime / video.duration > 0.95) {{
+                 markCompleted(FULL_ID);
+            }}
+        }});
+        
+        // --- Player Initialization ---
+
+        function initializePlayer(hlsSource, player) {{
+            // Destroy any existing HLS instance if the player is being re-initialized
+            if (player.hls) {{
+                player.hls.destroy();
+                player.hls = null;
+            }}
+
+            if (Hls.isSupported()) {{
+                const hls = new Hls();
+                player.hls = hls; // Store hls instance on player element
+                hls.loadSource(hlsSource);
+                hls.attachMedia(player);
+                hls.on(Hls.Events.MANIFEST_PARSED, (event, data) => {{
+                    if (player.id === 'videoPlayer') {{
+                        qualitySelector.innerHTML = '<option value="-1">स्वचालित (Adaptive)</option>';
+                        data.levels.forEach((level, index) => {{
+                            const option = document.createElement('option');
+                            option.value = index;
+                            option.textContent = `${{level.height}}p (${{ (level.bitrate / 1000000).toFixed(1) }} Mbps)`;
+                            qualitySelector.appendChild(option);
+                        }});
+                    }}
+                    player.play().catch(e => {{
+                        if (player.id === 'videoPlayer') {{
+                             message.textContent = "Autoplay blocked. Press play button.";
+                        }}
+                    }});
+                }});
+
+                if (player.id === 'videoPlayer') {{
+                    qualitySelector.addEventListener('change', () => {{
+                        hls.currentLevel = parseInt(qualitySelector.value, 10);
+                        message.textContent = `Quality set to: ${{qualitySelector.options[qualitySelector.selectedIndex].text}}`;
+                    }});
+                }}
+                
+                hls.on(Hls.Events.ERROR, (event, data) => {{
+                    if (data.fatal && player.id === 'videoPlayer') {{
+                        message.textContent = `Error: Video could not be loaded. (Details: ${{data.details}})`;
+                    }}
+                }});
+            }} else if (player.canPlayType('application/vnd.apple.mpegurl')) {{
+                player.src = hlsSource;
+                player.addEventListener('loadedmetadata', () => {{
+                    player.play();
+                }});
+            }} else {{
+                if (player.id === 'videoPlayer') {{
+                    message.textContent = 'Sorry, your browser does not support HLS video streaming.';
+                }}
+            }}
+        }}
+
+        if (VIDEO_HLS_URL) {{
+            initializePlayer(VIDEO_HLS_URL, video);
+        }} else {{
+            message.textContent = 'No video URL provided.';
+        }}
+
+        // --- Event Listeners ---
+        
+        // Brightness control
+        brightnessControl.addEventListener('input', () => {{
+            video.style.filter = `brightness(${{brightnessControl.value}})`;
+            popupVideoPlayer.style.filter = `brightness(${{brightnessControl.value}})`;
+        }});
+
+        // Download button functionality
+        downloadButton.addEventListener('click', () => {{
+            if (VIDEO_HLS_URL) {{
+                // Note: Direct HLS streaming links cannot be downloaded directly
+                // by the browser for a single file. This will open the M3U8 link,
+                // which often starts the download of the index file only. 
+                // For a proper download, a dedicated app or tool is needed.
+                window.open(VIDEO_HLS_URL, '_blank');
+                message.textContent = 'Downloading M3U8 link. For full video download, use a dedicated HLS downloader app (like IDM or specific Android apps).';
+            }} else {{
+                message.textContent = 'No video URL to download.';
+            }}
+        }});
+        
+        // Favorite button functionality
+        favoriteButton.addEventListener('click', () => {{
+            if (VIDEO_HLS_URL) {{
+                toggleFavorite(VIDEO_HLS_URL, VIDEO_NAME, VIDEO_PATH, VIDEO_NUMBER);
+            }}
+        }});
+
+        // Pop-up player functionality
+        popupPlayButton.addEventListener('click', () => {{
+            if (VIDEO_HLS_URL) {{
+                video.pause();
+                popupVideoPlayer.currentTime = video.currentTime;
+                initializePlayer(VIDEO_HLS_URL, popupVideoPlayer);
+                popupModal.style.display = 'flex';
+                popupVideoPlayer.play();
+            }}
+        }});
+
+        closeModal.addEventListener('click', () => {{
+            video.currentTime = popupVideoPlayer.currentTime;
+            popupVideoPlayer.pause();
+            popupModal.style.display = 'none';
+            video.play();
+        }});
+    </script>
+</body>
+</html>
