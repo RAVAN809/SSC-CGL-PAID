@@ -1,95 +1,1208 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Favourites</title>
+    <title>CGL Mains Maths(Practice Batch)</title>
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
     <style>
-        body {{
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            padding: 20px;
-            margin: 0;
-        }}
-        h1 {{
-            color: #FF4500;
-            text-align: center;
-            border-bottom: 2px solid #FF4500;
-        }}
-        ul {{
-            list-style-type: none;
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            color: #1e293b;
+            line-height: 1.6;
             padding: 0;
-            max-width: 800px;
-            margin: 20px auto;
-        }}
-        li {{
-            background-color: #ffffff;
-            margin: 10px 0;
+            margin: 0;
+            min-height: 100vh;
+            transition: all 0.3s ease;
+        }
+        body.dark-mode {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+        }
+        .container {
+            max-width: 100%;
             padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-            font-size: 1.1em;
+        }
+        .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }}
-        .fav-link {{
-            color: #1E90FF;
+            margin-bottom: 15px;
+            padding: 12px 15px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        .dark-mode .header {
+            background: #1e293b;
+            border-color: #334155;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .channel-link {
+            color: #3b82f6;
             text-decoration: none;
-            flex-grow: 1;
-        }}
-        .fav-link:hover {{
-            text-decoration: underline;
-        }}
-        .back-button {{
-            display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            text-align: center;
-            color: white;
-            background-color: #1E90FF;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 14px;
+        }
+        .top-right-icons {
+            display: flex;
+            gap: 10px;
+        }
+        .theme-toggle, .profile-btn {
+            background: none;
             border: none;
-            border-radius: 5px;
             cursor: pointer;
-            width: 200px;
+            font-size: 18px;
+            color: #1e293b;
+            padding: 5px;
+            border-radius: 50%;
+            width: 34px;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f1f5f9;
+            transition: all 0.3s ease;
+        }
+        .dark-mode .theme-toggle, .dark-mode .profile-btn {
+            background: #334155;
+            color: #e2e8f0;
+        }
+        .title-box {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 1px solid #e2e8f0;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .dark-mode .title-box {
+            background: #1e293b;
+            border-color: #334155;
+        }
+        .title-box h1 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #3b82f6;
+            margin: 0;
+        }
+        .player-section {
+            width: 100%;
+            margin-bottom: 15px;
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 1px solid #e2e8f0;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .dark-mode .player-section {
+            background: #1e293b;
+            border-color: #334155;
+        }
+        .video-title {
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: #1e293b;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        .dark-mode .video-title {
+            color: #e2e8f0;
+        }
+        .fav-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            color: #ccc;
+            transition: color 0.3s;
+        }
+        .fav-btn.active {
+            color: #ff4081;
+        }
+        .video-js {
+            width: 100% !important;
+            height: 250px !important;
+            border-radius: 6px;
+        }
+        .video-controls-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        .seek-buttons {
+            display: flex;
+            gap: 5px;
+        }
+        .seek-btn {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 6px 12px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .seek-btn:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .control-select {
+            border-radius: 4px;
+            border: 1px solid #e2e8f0;
+            padding: 5px 8px;
+            font-size: 12px;
+            background: #ffffff;
+            color: #3b82f6;
+            transition: all 0.3s ease;
+        }
+        .dark-mode .control-select {
+            background: #334155;
+            border-color: #475569;
+            color: #e2e8f0;
+        }
+        .progress-indicator {
+            margin-top: 8px;
+            font-size: 12px;
+            color: #1e293b;
+            transition: all 0.3s ease;
+        }
+        .dark-mode .progress-indicator {
+            color: #e2e8f0;
+        }
+        .completed-badge {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 11px;
+            margin-left: 8px;
+        }
+        .search-bar {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 14px;
+            box-sizing: border-box;
+            background: #ffffff;
+            color: #1e293b;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .dark-mode .search-bar {
+            background: #1e293b;
+            border-color: #334155;
+            color: #e2e8f0;
+        }
+        .tabs-row {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 15px;
+        }
+        .tab-btn {
+            padding: 8px 12px;
+            font-size: 12px;
+            border-radius: 6px;
+            background: #ffffff;
+            color: #1e293b;
+            font-weight: 500;
+            cursor: pointer;
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s;
+            outline: none;
+            flex: 1;
+            text-align: center;
+            max-width: 100px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .dark-mode .tab-btn {
+            background: #1e293b;
+            color: #e2e8f0;
+            border-color: #334155;
+        }
+        .tab-btn.active {
+            background: #3b82f6;
+            color: #fff;
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+        }
+        .tab-content {
+            display: none;
+            margin-bottom: 20px;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .list-box {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 1px solid #e2e8f0;
+            max-height: 400px;
+            overflow-y: auto;
+            transition: all 0.3s ease;
+        }
+        .dark-mode .list-box {
+            background: #1e293b;
+            border-color: #334155;
+        }
+        .list-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            color: #3b82f6;
+            font-weight: 500;
+            font-size: 12px;
+            border-radius: 6px;
+            margin-bottom: 6px;
+            padding: 8px 10px;
             text-decoration: none;
-        }}
+            transition: all 0.2s;
+            border-left: 3px solid #3b82f6;
+            cursor: pointer;
+            border: 1px solid #e2e8f0;
+        }
+        .dark-mode .list-item {
+            background: #1e293b;
+            border-color: #334155;
+        }
+        .list-item:hover {
+            background: #f1f5f9;
+            transform: translateX(3px);
+        }
+        .dark-mode .list-item:hover {
+            background: #334155;
+        }
+        .list-item-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .item-number {
+            background: #3b82f6;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .list-item-fav {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            color: #ccc;
+            margin-left: 8px;
+            transition: color 0.3s;
+        }
+        .list-item-fav.active {
+            color: #ff4081;
+        }
+        .no-items {
+            color: #999;
+            text-align: center;
+            padding: 20px;
+            font-style: italic;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            left: 0; top: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-content {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            width: 90vw;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            position: relative;
+            top: 5vh;
+            transition: all 0.3s ease;
+        }
+        .dark-mode .modal-content {
+            background: #1e293b;
+        }
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 15px;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+            transition: all 0.3s ease;
+        }
+        .dark-mode .modal-header {
+            background: #334155;
+            border-color: #475569;
+        }
+        .modal-header .close-btn {
+            color: #f00;
+            font-size: 20px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .download-btn {
+            background: #3b82f6;
+            color: #fff;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            text-decoration: none;
+            margin-left: 10px;
+            transition: all 0.3s ease;
+        }
+        .download-btn:hover {
+            background: #2563eb;
+        }
+        #pdf-frame {
+            flex: 1;
+            width: 100%;
+            border: none;
+        }
+        .profile-form {
+            padding: 15px;
+            flex: 1;
+            overflow-y: auto;
+        }
+        .profile-form input, .profile-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            font-size: 14px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+        .dark-mode .profile-form input, .dark-mode .profile-form textarea {
+            background: #334155;
+            border-color: #475569;
+            color: #e2e8f0;
+        }
+        .profile-form button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        .profile-form button:hover {
+            background: #2563eb;
+        }
+        .profile-data {
+            margin-top: 15px;
+            padding: 10px;
+            background: #f1f5f9;
+            border-radius: 6px;
+            font-size: 12px;
+            transition: all 0.3s ease;
+        }
+        .dark-mode .profile-data {
+            background: #334155;
+        }
+        .popup-play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.7);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            cursor: pointer;
+            display: none;
+            z-index: 10;
+        }
+        .custom-timeline {
+            width: 100%;
+            height: 8px;
+            background: #e2e8f0;
+            border-radius: 4px;
+            margin-top: 10px;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .dark-mode .custom-timeline {
+            background: #334155;
+        }
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            border-radius: 4px;
+            width: 0%;
+            position: relative;
+            transition: width 0.1s ease;
+        }
+        .progress-handle {
+            width: 16px;
+            height: 16px;
+            background: #3b82f6;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            right: -8px;
+            transform: translateY(-50%);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            cursor: grab;
+        }
+        .progress-handle:active {
+            cursor: grabbing;
+        }
+        .time-display {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            font-size: 12px;
+            color: #64748b;
+        }
+        .dark-mode .time-display {
+            color: #94a3b8;
+        }
+        .file-import-export {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .file-btn {
+            flex: 1;
+            padding: 10px;
+            background: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .file-btn:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+        .file-input {
+            display: none;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 10px; }
+            .tab-btn { padding: 6px 8px; font-size: 11px; max-width: 80px; }
+            .video-js { height: 200px !important; }
+            .list-item { font-size: 11px; padding: 6px 8px; }
+            .modal-content { width: 95vw; height: 85vh; }
+        }
     </style>
 </head>
 <body>
-    <h1>❤️ My Favourites</h1>
-    <ul>
-        <p id="empty-message" style="text-align: center; display:none;">No favourites added yet.</p>
-    </ul>
-    <a href="index.html" class="back-button">← Back to Courses</a>
+    <div class="container">
+        <div class="title-box">
+            <h1>CGL Mains Maths(Practice Batch)</h1>
+        </div>
+        
+        <div class="player-section">
+            <div class="video-title">
+                <span id="video-title">Video select karo</span>
+                <button class="fav-btn" id="player-fav-btn">💓</button>
+            </div>
+            <button class="popup-play" id="popup-play">▶</button>
+            <video id="main-video-player" class="video-js vjs-default-skin" controls preload="auto"></video>
+            
+            <div class="custom-timeline" id="custom-timeline">
+                <div class="progress-bar" id="progress-bar">
+                    <div class="progress-handle" id="progress-handle"></div>
+                </div>
+            </div>
+            <div class="time-display">
+                <span id="current-time">00:00</span>
+                <span id="duration">00:00</span>
+            </div>
+            
+            <div class="video-controls-bar">
+                <div class="seek-buttons">
+                    <button class="seek-btn" onclick="seekVideo(-10)">-10s</button>
+                    <button class="seek-btn" onclick="seekVideo(10)">+10s</button>
+                </div>
+                <select id="video-speed" class="control-select" onchange="changeSpeed(this.value)">
+                    <option value="0.25">0.25x</option>
+                    <option value="0.5">0.5x</option>
+                    <option value="0.75">0.75x</option>
+                    <option value="1" selected>1x</option>
+                    <option value="1.25">1.25x</option>
+                    <option value="1.5">1.5x</option>
+                    <option value="1.75">1.75x</option>
+                    <option value="2">2x</option>
+                    <option value="2.5">2.5x</option>
+                    <option value="3">3x</option>
+                </select>
+                <select id="video-quality" class="control-select" onchange="changeQuality(this.value)">
+                    <option value="auto">Auto Quality</option>
+                    <option value="144">144p</option>
+                    <option value="240">240p</option>
+                    <option value="360">360p</option>
+                    <option value="480">480p</option>
+                    <option value="720">720p</option>
+                    <option value="1080">1080p</option>
+                </select>
+            </div>
+            <div class="progress-indicator" id="progress-indicator"></div>
+        </div>
+        
+        <div class="file-import-export">
+            <button class="file-btn" onclick="importFromFile()">📁 File se Import Karo</button>
+            <button class="file-btn" onclick="exportToFile()">💾 File me Save Karo</button>
+            <input type="file" id="file-input" class="file-input" accept=".txt,.html">
+        </div>
+        
+        <div class="header">
+            <a class="channel-link" href="https://t.me/+quyIWMDmcOM4Mzk1" target="_blank">🛑 GROUP JOIN KARO</a>
+            <div class="top-right-icons">
+                <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+                <button class="profile-btn" onclick="openProfile()">👤</button>
+            </div>
+        </div>
+        
+        <div id="pdf-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span id="pdf-modal-title" style="font-weight:600;color:#3b82f6;">PDF</span>
+                    <div>
+                        <a id="download-pdf-btn" href="#" class="download-btn" download target="_blank">Download</a>
+                        <button class="close-btn" onclick="closePDF()">&times;</button>
+                    </div>
+                </div>
+                <iframe id="pdf-frame"></iframe>
+            </div>
+        </div>
+        
+        <div id="profile-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span style="font-weight:600;color:#3b82f6;">Profile & Data</span>
+                    <button class="close-btn" onclick="closeProfile()">&times;</button>
+                </div>
+                <div class="profile-form">
+                    <input type="text" id="profile-name" placeholder="Apna naam likho">
+                    <textarea id="profile-data" placeholder="Yahan data paste karo..." rows="5"></textarea>
+                    <button onclick="saveProfile()">Save Profile</button>
+                    <div class="profile-data">
+                        <h3>Saved Data:</h3>
+                        <div id="saved-data-display">Abhi koi data nahi hai</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <input type="text" class="search-bar" placeholder="Video ya PDF search karo..." onkeyup="filterItems()">
+        
+        <div class="tabs-row">
+            <button class="tab-btn active" onclick="showTab('videos')">Videos (<span id="video-count">0</span>)</button>
+            <button class="tab-btn" onclick="showTab('pdfs')">PDFs (<span id="pdf-count">0</span>)</button>
+            <button class="tab-btn" onclick="showTab('favorites')">Favorites</button>
+        </div>
+        
+        <div id="videos-tab" class="tab-content active">
+            <div class="list-box" id="videos-list"></div>
+        </div>
+        
+        <div id="pdfs-tab" class="tab-content">
+            <div class="list-box" id="pdfs-list"></div>
+        </div>
+        
+        <div id="favorites-tab" class="tab-content">
+            <div class="list-box" id="favorites-list"></div>
+        </div>
+    </div>
+
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {{
-            const favorites = JSON.parse(localStorage.getItem('favorites')) || {{}};
-            const favList = document.querySelector('ul');
-            const emptyMessage = document.getElementById('empty-message');
-
-            const keys = Object.keys(favorites);
-
-            if (keys.length === 0) {{
-                emptyMessage.style.display = 'block';
-            }} else {{
-                keys.forEach(key => {{
-                    const favItem = favorites[key];
-                    const li = document.createElement('li');
+        // Data storage
+        let userData = {
+            profile: { name: '', data: '' },
+            progress: {},
+            favorites: [],
+            theme: 'light',
+            videos: [],
+            pdfs: []
+        };
+        
+        let currentItemId = null;
+        let player = null;
+        let isDragging = false;
+        
+        // Load data from localStorage
+        function loadData() {
+            const saved = localStorage.getItem('userData');
+            if (saved) {
+                userData = JSON.parse(saved);
+            }
+            
+            // If no videos loaded, use default ones
+            if (userData.videos.length === 0) {
+                userData.videos = [
+                    { url: 'https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365746079112/6365746079112.m3u8', title: '[Intro/Demo] Class-01 | Practice Class 01 (Profit & Loss)' },
+                    { url: 'https://d14v4v80cpjht7.cloudfront.net/file_library/videos/vod_non_drm_hls/migration/mOlgE3McTRY/mOlgE3McTRY.m3u8', title: '[Arithmetic] Class-02 | Practice Class 02 (Profit & Loss)' },
+                    { url: 'https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365835941112/6365835941112.m3u8', title: '[Arithmetic] Class-03 | Practice Class 03 (Profit & Loss)' },
+                    { url: 'https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365890778112/6365890778112.m3u8', title: '[Arithmetic] Class-04 | Practice Class 04 (Profit & Loss)' },
+                    { url: 'https://d14v4v80cpjht7.cloudfront.net/file_library/videos/migration/brightcove/6365937409112/6365937409112.m3u8', title: '[Arithmetic] Class-05 | Practice Class 05 (Profit & Loss)' }
+                ];
+            }
+            
+            // If no PDFs loaded, use default ones
+            if (userData.pdfs.length === 0) {
+                userData.pdfs = [
+                    { url: 'https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6786481d2fba5_Miscellaneous_practice_class_7_SI_CI_Without_Annotation_Annotation_compressed.pdf', title: '[Arithmetic] Miscellaneous Practice Class -7 ( SI & CI)' },
+                    { url: 'https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6785f8706834e_miscellaneous_practice_6_Percentage_without_annotation_annotationcompressed.pdf', title: '[Arithmetic] Miscellaneous Practice -6 (Percentage)' },
+                    { url: 'https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6764d48814455_Profit_Loss_Part_1_to_5_Annotation_Without_Annotation.pdf', title: '[Arithmetic] Profit & Loss Class-1,2,3,4,5' },
+                    { url: 'https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6762f6eb39eaf_Profit_and_Loss_PYQ1compressed.pdf', title: '[Arithmetic] Profit and Loss PYQ-1' },
+                    { url: 'https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6762f62821cc4_Profit_Loss_Question_with_Solution1.pdf', title: '[Arithmetic] Profit & Loss (Solution)-1' }
+                ];
+            }
+            
+            if (userData.theme === 'dark') {
+                document.body.classList.add('dark-mode');
+                document.querySelector('.theme-toggle').textContent = '☀️';
+            }
+            
+            document.getElementById('saved-data-display').textContent = userData.profile.data || 'Abhi koi data nahi hai';
+            document.getElementById('profile-name').value = userData.profile.name || '';
+            document.getElementById('profile-data').value = userData.profile.data || '';
+            
+            renderVideos();
+            renderPDFs();
+            renderFavorites();
+            updateCounts();
+            
+            saveData();
+        }
+        
+        function saveData() {
+            localStorage.setItem('userData', JSON.stringify(userData));
+        }
+        
+        // Update video and PDF counts
+        function updateCounts() {
+            document.getElementById('video-count').textContent = userData.videos.length;
+            document.getElementById('pdf-count').textContent = userData.pdfs.length;
+        }
+        
+        // Render videos list with numbers
+        function renderVideos() {
+            const container = document.getElementById('videos-list');
+            container.innerHTML = '';
+            
+            if (userData.videos.length === 0) {
+                container.innerHTML = '<div class="no-items">Koi videos nahi hai</div>';
+                return;
+            }
+            
+            userData.videos.forEach((video, index) => {
+                const isFavorite = userData.favorites.includes(`video-${index}`);
+                const progress = userData.progress[`video-${index}`] || { watched: 0, duration: 0 };
+                const isCompleted = progress.duration > 0 && (progress.watched / progress.duration) >= 0.8;
+                
+                const item = document.createElement('div');
+                item.className = 'list-item';
+                item.innerHTML = `
+                    <div class="list-item-content" onclick="playVideo('${video.url}', '${video.title}', ${index})">
+                        <span class="item-number">${index + 1}</span>
+                        ${video.title}
+                        ${isCompleted ? '<span class="completed-badge">Completed</span>' : ''}
+                    </div>
+                    <button class="list-item-fav ${isFavorite ? 'active' : ''}" onclick="toggleFavorite('video-${index}')">💓</button>
+                `;
+                container.appendChild(item);
+            });
+        }
+        
+        // Render PDFs list with numbers
+        function renderPDFs() {
+            const container = document.getElementById('pdfs-list');
+            container.innerHTML = '';
+            
+            if (userData.pdfs.length === 0) {
+                container.innerHTML = '<div class="no-items">Koi PDFs nahi hai</div>';
+                return;
+            }
+            
+            userData.pdfs.forEach((pdf, index) => {
+                const isFavorite = userData.favorites.includes(`pdf-${index}`);
+                const isCompleted = userData.progress[`pdf-${index}`] || false;
+                
+                const item = document.createElement('div');
+                item.className = 'list-item';
+                item.innerHTML = `
+                    <div class="list-item-content" onclick="openPDF('${pdf.url}', '${pdf.title}', ${index})">
+                        <span class="item-number">${index + 1}</span>
+                        ${pdf.title}
+                        ${isCompleted ? '<span class="completed-badge">Completed</span>' : ''}
+                    </div>
+                    <button class="list-item-fav ${isFavorite ? 'active' : ''}" onclick="toggleFavorite('pdf-${index}')">💓</button>
+                `;
+                container.appendChild(item);
+            });
+        }
+        
+        function renderFavorites() {
+            const container = document.getElementById('favorites-list');
+            container.innerHTML = '';
+            
+            if (userData.favorites.length === 0) {
+                container.innerHTML = '<div class="no-items">Abhi koi favorite nahi hai</div>';
+                return;
+            }
+            
+            userData.favorites.forEach(favId => {
+                const [type, index] = favId.split('-');
+                const itemData = type === 'video' ? userData.videos[parseInt(index)] : userData.pdfs[parseInt(index)];
+                
+                if (itemData) {
+                    const progress = userData.progress[favId] || { watched: 0, duration: 0 };
+                    const isCompleted = type === 'pdf' ? userData.progress[favId] : 
+                                      (progress.duration > 0 && (progress.watched / progress.duration) >= 0.8);
                     
-                    const link = document.createElement('a');
-                    link.className = 'fav-link';
-                    // Construct the URL to player.html
-                    link.href = `player.html?url=${{encodeURIComponent(favItem.url)}}&name=${{encodeURIComponent(favItem.name)}}&path=${{encodeURIComponent(favItem.path)}}&num=${{favItem.num}}`;
-                    link.textContent = `${{favItem.name}} (${{favItem.path.split('.')[0]}} - No. ${{favItem.num}})`;
+                    const item = document.createElement('div');
+                    item.className = 'list-item';
+                    item.innerHTML = `
+                        <div class="list-item-content" onclick="${type === 'video' ? `playVideo('${itemData.url}', '${itemData.title}', ${index})` : `openPDF('${itemData.url}', '${itemData.title}', ${index})`}">
+                            <span class="item-number">${parseInt(index) + 1}</span>
+                            ${itemData.title}
+                            ${isCompleted ? '<span class="completed-badge">Completed</span>' : ''}
+                        </div>
+                        <button class="list-item-fav active" onclick="toggleFavorite('${favId}')">💓</button>
+                    `;
+                    container.appendChild(item);
+                }
+            });
+        }
+        
+        function toggleTheme() {
+            const isDark = document.body.classList.contains('dark-mode');
+            if (isDark) {
+                document.body.classList.remove('dark-mode');
+                document.querySelector('.theme-toggle').textContent = '🌙';
+                userData.theme = 'light';
+            } else {
+                document.body.classList.add('dark-mode');
+                document.querySelector('.theme-toggle').textContent = '☀️';
+                userData.theme = 'dark';
+            }
+            saveData();
+        }
+        
+        function showTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            
+            document.getElementById(tabName + '-tab').classList.add('active');
+            document.querySelector(`.tab-btn[onclick="showTab('${tabName}')"]`).classList.add('active');
+            
+            if (tabName === 'favorites') renderFavorites();
+        }
+        
+        function filterItems() {
+            const searchTerm = document.querySelector('.search-bar').value.toLowerCase();
+            const activeTab = document.querySelector('.tab-content.active');
+            activeTab.querySelectorAll('.list-item').forEach(item => {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(searchTerm) ? 'flex' : 'none';
+            });
+        }
+        
+        function toggleFavorite(id) {
+            const index = userData.favorites.indexOf(id);
+            if (index === -1) {
+                userData.favorites.push(id);
+            } else {
+                userData.favorites.splice(index, 1);
+            }
+            saveData();
+            
+            renderVideos();
+            renderPDFs();
+            renderFavorites();
+            
+            if (currentItemId === id) {
+                document.getElementById('player-fav-btn').classList.toggle('active', userData.favorites.includes(id));
+            }
+        }
+        
+        // Initialize video player
+        function initVideoPlayer() {
+            if (!player) {
+                player = videojs('main-video-player', {
+                    controls: true,
+                    autoplay: false,
+                    preload: 'auto',
+                    fluid: true,
+                    responsive: true
+                });
+                
+                player.on('pause', function() {
+                    document.getElementById('popup-play').style.display = 'block';
+                });
+                
+                player.on('play', function() {
+                    document.getElementById('popup-play').style.display = 'none';
+                });
+                
+                player.on('timeupdate', function() {
+                    if (currentItemId && currentItemId.startsWith('video-')) {
+                        const progress = userData.progress[currentItemId] || { watched: 0, duration: player.duration() };
+                        progress.watched = player.currentTime();
+                        progress.duration = player.duration();
+                        userData.progress[currentItemId] = progress;
+                        saveData();
+                        
+                        updateProgressIndicator();
+                        updateCustomTimeline();
+                    }
+                });
+                
+                player.on('loadedmetadata', function() {
+                    if (currentItemId && currentItemId.startsWith('video-')) {
+                        const progress = userData.progress[currentItemId];
+                        if (progress && progress.watched > 0) {
+                            player.currentTime(progress.watched);
+                        }
+                        updateProgressIndicator();
+                        updateCustomTimeline();
+                    }
+                });
+            }
+        }
+        
+        function updateProgressIndicator() {
+            if (currentItemId && currentItemId.startsWith('video-')) {
+                const progress = userData.progress[currentItemId];
+                if (progress && progress.duration > 0) {
+                    const percent = Math.round((progress.watched / progress.duration) * 100);
+                    const isCompleted = percent >= 80;
                     
-                    li.appendChild(link);
-                    favList.appendChild(li);
-                }});
-            }}
-        }});
+                    if (isCompleted) {
+                        document.getElementById('progress-indicator').innerHTML = '<span class="completed-badge">Completed - ' + percent + '%</span>';
+                    } else {
+                        document.getElementById('progress-indicator').textContent = `Progress: ${percent}%`;
+                    }
+                }
+            }
+        }
+        
+        function updateCustomTimeline() {
+            if (player && player.duration()) {
+                const currentTime = player.currentTime();
+                const duration = player.duration();
+                const percent = (currentTime / duration) * 100;
+                
+                document.getElementById('progress-bar').style.width = percent + '%';
+                document.getElementById('current-time').textContent = formatTime(currentTime);
+                document.getElementById('duration').textContent = formatTime(duration);
+            }
+        }
+        
+        function formatTime(seconds) {
+            const h = Math.floor(seconds / 3600);
+            const m = Math.floor((seconds % 3600) / 60);
+            const s = Math.floor(seconds % 60);
+            
+            if (h > 0) {
+                return `${h}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+            } else {
+                return `${m}:${s.toString().padStart(2, '0')}`;
+            }
+        }
+        
+        function seekVideo(seconds) {
+            if (player) {
+                player.currentTime(player.currentTime() + seconds);
+            }
+        }
+        
+        function changeSpeed(speed) {
+            if (player) {
+                player.playbackRate(parseFloat(speed));
+            }
+        }
+        
+        function changeQuality(quality) {
+            // Quality change logic would go here
+            console.log('Quality changed to:', quality);
+        }
+        
+        function playVideo(url, title, index) {
+            currentItemId = `video-${index}`;
+            document.getElementById('video-title').textContent = title;
+            document.getElementById('player-fav-btn').classList.toggle('active', userData.favorites.includes(currentItemId));
+            
+            initVideoPlayer();
+            
+            if (url.includes('youtube.com') || url.includes('youtu.be')) {
+                // YouTube video - external app suggestion
+                if (confirm('YouTube video hai. Kya aap YouTube app mein open karna chahenge?')) {
+                    window.open(url, '_blank');
+                }
+                return;
+            }
+            
+            player.src({ src: url, type: 'application/x-mpegURL' });
+            player.play().catch(err => console.log('Play error:', err));
+            
+            updateProgressIndicator();
+        }
+        
+        function openPDF(url, title, index) {
+            currentItemId = `pdf-${index}`;
+            document.getElementById('pdf-frame').src = url;
+            document.getElementById('download-pdf-btn').href = url;
+            document.getElementById('pdf-modal-title').textContent = title;
+            document.getElementById('pdf-modal').style.display = 'flex';
+            
+            // Mark as completed immediately
+            userData.progress[currentItemId] = true;
+            saveData();
+            
+            renderPDFs();
+            renderFavorites();
+        }
+        
+        function closePDF() {
+            document.getElementById('pdf-modal').style.display = 'none';
+            document.getElementById('pdf-frame').src = '';
+        }
+        
+        function openProfile() {
+            document.getElementById('profile-modal').style.display = 'flex';
+        }
+        
+        function closeProfile() {
+            document.getElementById('profile-modal').style.display = 'none';
+        }
+        
+        function saveProfile() {
+            userData.profile.name = document.getElementById('profile-name').value;
+            userData.profile.data = document.getElementById('profile-data').value;
+            saveData();
+            
+            document.getElementById('saved-data-display').textContent = userData.profile.data || 'Abhi koi data nahi hai';
+            alert('Profile save ho gaya!');
+        }
+        
+        // Custom timeline functionality
+        function initCustomTimeline() {
+            const timeline = document.getElementById('custom-timeline');
+            const progressBar = document.getElementById('progress-bar');
+            const handle = document.getElementById('progress-handle');
+            
+            timeline.addEventListener('click', function(e) {
+                if (player && player.duration()) {
+                    const rect = timeline.getBoundingClientRect();
+                    const percent = (e.clientX - rect.left) / rect.width;
+                    const newTime = percent * player.duration();
+                    player.currentTime(newTime);
+                }
+            });
+            
+            handle.addEventListener('mousedown', startDrag);
+            handle.addEventListener('touchstart', startDrag);
+            
+            function startDrag(e) {
+                e.preventDefault();
+                isDragging = true;
+                
+                document.addEventListener('mousemove', onDrag);
+                document.addEventListener('touchmove', onDrag);
+                document.addEventListener('mouseup', stopDrag);
+                document.addEventListener('touchend', stopDrag);
+            }
+            
+            function onDrag(e) {
+                if (!isDragging || !player || !player.duration()) return;
+                
+                const rect = timeline.getBoundingClientRect();
+                let clientX;
+                
+                if (e.type === 'touchmove') {
+                    clientX = e.touches[0].clientX;
+                } else {
+                    clientX = e.clientX;
+                }
+                
+                let percent = (clientX - rect.left) / rect.width;
+                percent = Math.max(0, Math.min(1, percent));
+                
+                const newTime = percent * player.duration();
+                player.currentTime(newTime);
+            }
+            
+            function stopDrag() {
+                isDragging = false;
+                document.removeEventListener('mousemove', onDrag);
+                document.removeEventListener('touchmove', onDrag);
+                document.removeEventListener('mouseup', stopDrag);
+                document.removeEventListener('touchend', stopDrag);
+            }
+        }
+        
+        // File import/export functionality
+        function importFromFile() {
+            document.getElementById('file-input').click();
+        }
+        
+        document.getElementById('file-input').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+            
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                try {
+                    const content = event.target.result;
+                    
+                    // Try to parse as JSON first (for HTML export)
+                    try {
+                        const importedData = JSON.parse(content);
+                        if (importedData.videos && importedData.pdfs) {
+                            userData.videos = importedData.videos;
+                            userData.pdfs = importedData.pdfs;
+                            alert('Data successfully imported!');
+                        }
+                    } catch (jsonError) {
+                        // If not JSON, parse as text file with links
+                        parseTextFile(content);
+                    }
+                    
+                    renderVideos();
+                    renderPDFs();
+                    updateCounts();
+                    saveData();
+                } catch (error) {
+                    alert('Error importing file: ' + error.message);
+                }
+            };
+            reader.readAsText(file);
+        });
+        
+        function parseTextFile(content) {
+            const lines = content.split('\n');
+            const newVideos = [];
+            const newPDFs = [];
+            
+            lines.forEach(line => {
+                if (line.trim() === '') return;
+                
+                // Check if line contains a video or PDF
+                if (line.includes('https://')) {
+                    const parts = line.split('https://');
+                    if (parts.length >= 2) {
+                        const title = parts[0].trim();
+                        const url = 'https://' + parts[1].trim();
+                        
+                        if (url.includes('.m3u8') || url.includes('youtube.com') || url.includes('youtu.be')) {
+                            newVideos.push({ title, url });
+                        } else if (url.includes('.pdf')) {
+                            newPDFs.push({ title, url });
+                        }
+                    }
+                }
+            });
+            
+            if (newVideos.length > 0) {
+                userData.videos = newVideos;
+            }
+            
+            if (newPDFs.length > 0) {
+                userData.pdfs = newPDFs;
+            }
+            
+            alert(`Imported ${newVideos.length} videos and ${newPDFs.length} PDFs`);
+        }
+        
+        function exportToFile() {
+            const dataToExport = {
+                videos: userData.videos,
+                pdfs: userData.pdfs
+            };
+            
+            const blob = new Blob([JSON.stringify(dataToExport, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'video_player_data.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            alert('Data exported successfully!');
+        }
+        
+        // Initialize popup play button
+        document.getElementById('popup-play').addEventListener('click', function() {
+            if (player) {
+                player.play();
+                this.style.display = 'none';
+            }
+        });
+        
+        // Load everything when page is ready
+        window.onload = function() {
+            loadData();
+            initVideoPlayer();
+            initCustomTimeline();
+            
+            // Auto play first video
+            setTimeout(() => {
+                if (userData.videos.length > 0) {
+                    playVideo(userData.videos[0].url, userData.videos[0].title, 0);
+                }
+            }, 1000);
+        };
     </script>
 </body>
 </html>
