@@ -1,0 +1,29 @@
+{
+  "batch_id": 2380,
+  "topics": [
+    {
+      "id": 23649,
+      "topicName": "Arithmetic"
+    },
+    {
+      "id": 23650,
+      "topicName": "Syllabus"
+    },
+    {
+      "id": 23651,
+      "topicName": "Arith.Class Png"
+    },
+    {
+      "id": 23652,
+      "topicName": "Arith.Class Sheet"
+    },
+    {
+      "id": 23653,
+      "topicName": "Arith.Class Notes"
+    },
+    {
+      "id": 23654,
+      "topicName": "Practice Session"
+    }
+  ]
+}
