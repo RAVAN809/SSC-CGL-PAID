@@ -1,0 +1,3 @@
+{
+  "error": "Client error '400 Bad Request' for url 'https://elearn.crwilladmin.com/api/v9/batch-topic/2274?type=class'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400"
+}
