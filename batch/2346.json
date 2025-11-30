@@ -1,0 +1,41 @@
+{
+  "batch_id": 2346,
+  "topics": [
+    {
+      "id": 23154,
+      "topicName": "Reasoning"
+    },
+    {
+      "id": 23155,
+      "topicName": "Reas (VOD)"
+    },
+    {
+      "id": 23156,
+      "topicName": "Syllabus  "
+    },
+    {
+      "id": 23255,
+      "topicName": "Latest Practice Set"
+    },
+    {
+      "id": 23157,
+      "topicName": "Additional Notes"
+    },
+    {
+      "id": 23158,
+      "topicName": "Class PNG"
+    },
+    {
+      "id": 23159,
+      "topicName": "VOD Notes"
+    },
+    {
+      "id": 23511,
+      "topicName": "Hand Written Class Notes"
+    },
+    {
+      "id": 26347,
+      "topicName": "SSC CGL Pre Mock Test"
+    }
+  ]
+}
