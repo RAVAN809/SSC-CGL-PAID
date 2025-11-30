@@ -1,0 +1,29 @@
+{
+  "batch_id": 2381,
+  "topics": [
+    {
+      "id": 23657,
+      "topicName": "Advance"
+    },
+    {
+      "id": 23658,
+      "topicName": "Syllabus"
+    },
+    {
+      "id": 23659,
+      "topicName": "Adv Class Png"
+    },
+    {
+      "id": 23660,
+      "topicName": "Adv Class Sheet"
+    },
+    {
+      "id": 23661,
+      "topicName": "Adv Class Notes"
+    },
+    {
+      "id": 23662,
+      "topicName": "Practice Session"
+    }
+  ]
+}
