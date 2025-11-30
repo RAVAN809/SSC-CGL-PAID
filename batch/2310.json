@@ -1,0 +1,61 @@
+{
+  "batch_id": 2310,
+  "topics": [
+    {
+      "id": 22576,
+      "topicName": "Syllabus"
+    },
+    {
+      "id": 22577,
+      "topicName": "Demo"
+    },
+    {
+      "id": 22579,
+      "topicName": "Advance"
+    },
+    {
+      "id": 22578,
+      "topicName": "Arithmetic"
+    },
+    {
+      "id": 22636,
+      "topicName": "Arith Class Sheet"
+    },
+    {
+      "id": 22637,
+      "topicName": "Arith Class Notes"
+    },
+    {
+      "id": 22638,
+      "topicName": "CDS Previous Year Question"
+    },
+    {
+      "id": 22639,
+      "topicName": "TCS/SSC Previous Year Question"
+    },
+    {
+      "id": 22640,
+      "topicName": "Doubts"
+    },
+    {
+      "id": 22635,
+      "topicName": "Arith Class Png"
+    },
+    {
+      "id": 22633,
+      "topicName": "Adv Class Notes"
+    },
+    {
+      "id": 22632,
+      "topicName": "Adv Class Sheet"
+    },
+    {
+      "id": 22631,
+      "topicName": "Adv Class Png"
+    },
+    {
+      "id": 22629,
+      "topicName": "Advance Level Question"
+    }
+  ]
+}
