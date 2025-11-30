@@ -1,0 +1,189 @@
+{
+  "batch_id": 2304,
+  "topics": [
+    {
+      "id": 27083,
+      "topicName": "Machine (Live)"
+    },
+    {
+      "id": 22668,
+      "topicName": "Special Motor Ques."
+    },
+    {
+      "id": 24829,
+      "topicName": "AC Analysis"
+    },
+    {
+      "id": 22592,
+      "topicName": "Network Theory (Live)"
+    },
+    {
+      "id": 26575,
+      "topicName": "NETWORK THEORY - 02"
+    },
+    {
+      "id": 22607,
+      "topicName": "Basic Electronics"
+    },
+    {
+      "id": 25032,
+      "topicName": "Microprocessor (Live)"
+    },
+    {
+      "id": 22664,
+      "topicName": "MACHINE (VOD)"
+    },
+    {
+      "id": 22666,
+      "topicName": "DC Machine Ques."
+    },
+    {
+      "id": 22667,
+      "topicName": "DC Machine Advance Ques."
+    },
+    {
+      "id": 22669,
+      "topicName": "POWER SYS (VOD)"
+    },
+    {
+      "id": 22670,
+      "topicName": "Transmission & Distribution Ques."
+    },
+    {
+      "id": 22672,
+      "topicName": "MEASUREMENT (VOD)"
+    },
+    {
+      "id": 22671,
+      "topicName": "Measurement Ques."
+    },
+    {
+      "id": 22673,
+      "topicName": "UEE (VOD)"
+    },
+    {
+      "id": 22674,
+      "topicName": "Estimation & Costing ( Vod)"
+    },
+    {
+      "id": 22675,
+      "topicName": "Three Phase ckt ( VOD) "
+    },
+    {
+      "id": 22676,
+      "topicName": "MATERIAL SCIENCE & DRIVE (VOD)"
+    },
+    {
+      "id": 22677,
+      "topicName": "SIGNAL SYS (VOD)"
+    },
+    {
+      "id": 22678,
+      "topicName": "POWER ELECTRONICS (VOD)"
+    },
+    {
+      "id": 22679,
+      "topicName": "CONTROL SYS (VOD)"
+    },
+    {
+      "id": 22680,
+      "topicName": "DIGITAL (VOD)"
+    },
+    {
+      "id": 22681,
+      "topicName": "ANALOG ELECTRONICS (VOD)"
+    },
+    {
+      "id": 22595,
+      "topicName": "Enviro & Ecology"
+    },
+    {
+      "id": 22605,
+      "topicName": "Reas (VOD)"
+    },
+    {
+      "id": 22606,
+      "topicName": "Comp (VOD)"
+    },
+    {
+      "id": 22611,
+      "topicName": "Arithmetic"
+    },
+    {
+      "id": 26700,
+      "topicName": "Advance maths"
+    },
+    {
+      "id": 26701,
+      "topicName": "Advance"
+    },
+    {
+      "id": 22740,
+      "topicName": "Chem"
+    },
+    {
+      "id": 22739,
+      "topicName": "Phy"
+    },
+    {
+      "id": 22738,
+      "topicName": "Eco"
+    },
+    {
+      "id": 22737,
+      "topicName": "Geo"
+    },
+    {
+      "id": 22736,
+      "topicName": "Pol"
+    },
+    {
+      "id": 22735,
+      "topicName": "His "
+    },
+    {
+      "id": 22734,
+      "topicName": "Bio (VOD)"
+    },
+    {
+      "id": 22733,
+      "topicName": "Chem (VOD)"
+    },
+    {
+      "id": 22732,
+      "topicName": "Phy (VOD)"
+    },
+    {
+      "id": 22731,
+      "topicName": "Eco (VOD)"
+    },
+    {
+      "id": 22730,
+      "topicName": "Pol (VOD)"
+    },
+    {
+      "id": 22729,
+      "topicName": "Geo (VOD)"
+    },
+    {
+      "id": 22728,
+      "topicName": "His (VOD)"
+    },
+    {
+      "id": 25244,
+      "topicName": "Trade Notes"
+    },
+    {
+      "id": 22641,
+      "topicName": "Demo"
+    },
+    {
+      "id": 27598,
+      "topicName": "Notes"
+    },
+    {
+      "id": 32119,
+      "topicName": "EMFT (VOD)"
+    }
+  ]
+}
