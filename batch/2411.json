@@ -1,0 +1,53 @@
+{
+  "batch_id": 2411,
+  "topics": [
+    {
+      "id": 23864,
+      "topicName": "English Practice"
+    },
+    {
+      "id": 24550,
+      "topicName": "Daily Shots New Series"
+    },
+    {
+      "id": 23876,
+      "topicName": "Mock Test"
+    },
+    {
+      "id": 23875,
+      "topicName": "Vocab Spl."
+    },
+    {
+      "id": 23873,
+      "topicName": "Video For Beginners"
+    },
+    {
+      "id": 23872,
+      "topicName": "Self Learning Material"
+    },
+    {
+      "id": 23871,
+      "topicName": "Class Notes"
+    },
+    {
+      "id": 23870,
+      "topicName": "Syllabus"
+    },
+    {
+      "id": 23868,
+      "topicName": "One Hour, Vocab Power"
+    },
+    {
+      "id": 23867,
+      "topicName": "The Vocab-Wits Series"
+    },
+    {
+      "id": 23865,
+      "topicName": "Eng (VOD)"
+    },
+    {
+      "id": 23874,
+      "topicName": "Daily Shots"
+    }
+  ]
+}
