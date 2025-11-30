@@ -1,0 +1,109 @@
+{
+  "batch_id": 2264,
+  "topics": [
+    {
+      "id": 27464,
+      "topicName": "Measurement (Live)"
+    },
+    {
+      "id": 25907,
+      "topicName": "Transmission & Distribution (Live)"
+    },
+    {
+      "id": 26789,
+      "topicName": "Mix Point (For BSPHCL)"
+    },
+    {
+      "id": 21863,
+      "topicName": "Machine"
+    },
+    {
+      "id": 21803,
+      "topicName": "Basic Elec 1 ( DC) "
+    },
+    {
+      "id": 21802,
+      "topicName": "Basic Elec 2 ( AC)"
+    },
+    {
+      "id": 22286,
+      "topicName": "Notes"
+    },
+    {
+      "id": 22445,
+      "topicName": "ELECTRIC TOOL (VOD)"
+    },
+    {
+      "id": 22446,
+      "topicName": "ELECTRIC APPLIANCES (VOD)"
+    },
+    {
+      "id": 22447,
+      "topicName": "SOLDERING & HEATING (VOD)"
+    },
+    {
+      "id": 22448,
+      "topicName": "Cell & Bettery (VOD)"
+    },
+    {
+      "id": 22449,
+      "topicName": "Metal & Alloy"
+    },
+    {
+      "id": 24022,
+      "topicName": "Comp VOD"
+    },
+    {
+      "id": 24023,
+      "topicName": "Comp. (Notes)"
+    },
+    {
+      "id": 22283,
+      "topicName": "Trade Notes"
+    },
+    {
+      "id": 22274,
+      "topicName": "Electronics (Raj Sir)"
+    },
+    {
+      "id": 22275,
+      "topicName": "MEASUREMENT (VOD)"
+    },
+    {
+      "id": 22276,
+      "topicName": "Measurement Ques"
+    },
+    {
+      "id": 22277,
+      "topicName": "Estimation & Costing ( Vod)"
+    },
+    {
+      "id": 22278,
+      "topicName": "ILLUMINATION (VOD)"
+    },
+    {
+      "id": 22280,
+      "topicName": "TRANSMISSION & DISTRIBUTION"
+    },
+    {
+      "id": 22281,
+      "topicName": "Transmission & Distribution Ques"
+    },
+    {
+      "id": 28613,
+      "topicName": "Digital-1"
+    },
+    {
+      "id": 28614,
+      "topicName": "DIGITAL-2"
+    },
+    {
+      "id": 28620,
+      "topicName": "SCR"
+    },
+    {
+      "id": 28869,
+      "topicName": "Safety & Health "
+    }
+  ]
+}
