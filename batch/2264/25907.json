@@ -1,0 +1,664 @@
+{
+  "batchid": 2264,
+  "topicid": 25907,
+  "classes_total": 48,
+  "classes": [
+    {
+      "title": "Class 57 || Mix Point || Rajkumar Sir",
+      "id": "4433487",
+      "date": "12-Dec-2024 11:30",
+      "video_url": "4433487_0_8979619676432195"
+    },
+    {
+      "title": "Class 56 || Mix Point || Rajkumar Sir",
+      "id": "4433486",
+      "date": "10-Dec-2024 11:30",
+      "video_url": "4433486_0_7802177438475224"
+    },
+    {
+      "title": "Class 55 || Mix Point || Rajkumar Sir",
+      "id": "4433484",
+      "date": "06-Dec-2024 11:30",
+      "video_url": "4433484_0_2548089366002714"
+    },
+    {
+      "title": "Class 54 || Mix Point || Rajkumar Sir",
+      "id": "4433483",
+      "date": "05-Dec-2024 11:30",
+      "video_url": "4433483_0_1234075002733967"
+    },
+    {
+      "title": "Class- 52 || Power Transmission || Rajkumar Sir",
+      "id": "4433481",
+      "date": "03-Dec-2024 11:30",
+      "video_url": "4433481_0_6516391426295275"
+    },
+    {
+      "title": "Class- 51 || Power Transmission || Rajkumar Sir",
+      "id": "4433479",
+      "date": "02-Dec-2024 11:30",
+      "video_url": "4433479_0_3632857617959416"
+    },
+    {
+      "title": "Class- 50 || Power Transmission || Rajkumar Sir",
+      "id": "4433478",
+      "date": "30-Nov-2024 11:30",
+      "video_url": "4433478_0_1393871622440230"
+    },
+    {
+      "title": "Class- 49 || Power Transmission || Rajkumar Sir",
+      "id": "4433476",
+      "date": "29-Nov-2024 11:30",
+      "video_url": "4433476_0_5048504302719264"
+    },
+    {
+      "title": "Class- 48 || Power Transmission || Rajkumar Sir",
+      "id": "4433475",
+      "date": "28-Nov-2024 11:30",
+      "video_url": "4433475_0_1693056631848854"
+    },
+    {
+      "title": "Class- 47 || Power Transmission || Rajkumar Sir",
+      "id": "4433473",
+      "date": "27-Nov-2024 11:30",
+      "video_url": "4433473_0_9152097290846485"
+    },
+    {
+      "title": "Class- 46 || Power Transmission || Rajkumar Sir",
+      "id": "4433472",
+      "date": "26-Nov-2024 11:30",
+      "video_url": "4433472_0_1471489256633942"
+    },
+    {
+      "title": "Class- 45 || Power Transmission || Rajkumar Sir",
+      "id": "4433471",
+      "date": "25-Nov-2024 11:30",
+      "video_url": "4433471_0_9858752538131443"
+    },
+    {
+      "title": "Class- 44 || Power Transmission || Rajkumar Sir",
+      "id": "4433470",
+      "date": "24-Nov-2024 09:00",
+      "video_url": "4433470_0_2128227615082271"
+    },
+    {
+      "title": "Class- 43 || Power Transmission || Rajkumar Sir",
+      "id": "4433469",
+      "date": "23-Nov-2024 11:30",
+      "video_url": "4433469_0_5947283738183857"
+    },
+    {
+      "title": "Class- 42 || Power Transmission || Rajkumar Sir",
+      "id": "4433468",
+      "date": "22-Nov-2024 11:30",
+      "video_url": "4433468_0_6457979107907775"
+    },
+    {
+      "title": "Class- 41 || Power Transmission || Rajkumar Sir",
+      "id": "4433467",
+      "date": "21-Nov-2024 11:30",
+      "video_url": "4433467_0_7547766980476019"
+    },
+    {
+      "title": "Class- 40 || Power Transmission || Rajkumar Sir",
+      "id": "4433466",
+      "date": "20-Nov-2024 11:30",
+      "video_url": "4433466_0_6815048032941338"
+    },
+    {
+      "title": "Class- 39 || Power Transmission || Rajkumar Sir",
+      "id": "4433465",
+      "date": "19-Nov-2024 11:30",
+      "video_url": "4433465_0_3690855054591440"
+    },
+    {
+      "title": "Class- 36 || Power Plant || Rajkumar Sir",
+      "id": "4433464",
+      "date": "12-Nov-2024 11:30",
+      "video_url": "4433464_0_3020384351688624"
+    },
+    {
+      "title": "Class- 34 || Power Plant || Rajkumar Sir",
+      "id": "4433462",
+      "date": "09-Nov-2024 11:30",
+      "video_url": "4433462_0_3225916509572266"
+    },
+    {
+      "title": "Class- 33 || Power Plant || Rajkumar Sir",
+      "id": "4433461",
+      "date": "08-Nov-2024 11:30",
+      "video_url": "4433461_0_2467105133060141"
+    },
+    {
+      "title": "Class 32 || Power Plant || Rajkumar Sir",
+      "id": "4433460",
+      "date": "07-Nov-2024 11:30",
+      "video_url": "4433460_0_7905383984947848"
+    },
+    {
+      "title": "Class 31 || Power Plant || Rajkumar Sir",
+      "id": "4433459",
+      "date": "06-Nov-2024 11:30",
+      "video_url": "4433459_0_5668441615873303"
+    },
+    {
+      "title": "Class 30 || Power Plant || Rajkumar Sir",
+      "id": "4433458",
+      "date": "05-Nov-2024 11:30",
+      "video_url": "4433458_0_2245407251787211"
+    },
+    {
+      "title": "Class 28 || Power Plant || Rajkumar Sir",
+      "id": "4433457",
+      "date": "26-Oct-2024 11:30",
+      "video_url": "4433457_0_5439194918471755"
+    },
+    {
+      "title": "Class 27 || Power Plant || Rajkumar Sir",
+      "id": "4433456",
+      "date": "25-Oct-2024 11:30",
+      "video_url": "4433456_0_4979203796384468"
+    },
+    {
+      "title": "Class 26 || Power Plant || Rajkumar Sir",
+      "id": "4433455",
+      "date": "24-Oct-2024 11:30",
+      "video_url": "4433455_0_3587241420700743"
+    },
+    {
+      "title": "Class 24 || Relay & Circuit Breaker || Rajkumar Sir",
+      "id": "4433454",
+      "date": "22-Oct-2024 11:30",
+      "video_url": "4433454_0_9732412034601395"
+    },
+    {
+      "title": "Class 23 || Relay & Circuit Breaker || Rajkumar Sir",
+      "id": "4433453",
+      "date": "19-Oct-2024 15:30",
+      "video_url": "4433453_0_7802781751196181"
+    },
+    {
+      "title": "Class 22 || Relay & Circuit Breaker || Rajkumar Sir",
+      "id": "4433452",
+      "date": "18-Oct-2024 11:30",
+      "video_url": "4433452_0_1763743521010729"
+    },
+    {
+      "title": "Class 21 || Relay & Circuit Breaker || Rajkumar Sir",
+      "id": "4433451",
+      "date": "16-Oct-2024 11:30",
+      "video_url": "4433451_0_4225247983409884"
+    },
+    {
+      "title": "Class 18 || Relay & Circuit Breaker || Rajkumar Sir",
+      "id": "4433450",
+      "date": "10-Oct-2024 11:30",
+      "video_url": "4433450_0_2457046487286859"
+    },
+    {
+      "title": "Class 17 || Relay & Circuit Breaker || Rajkumar Sir",
+      "id": "4433449",
+      "date": "09-Oct-2024 11:30",
+      "video_url": "4433449_0_5328743944833105"
+    },
+    {
+      "title": "Class 16 || Relay & Circuit Breaker || Rajkumar Sir",
+      "id": "4433448",
+      "date": "08-Oct-2024 11:30",
+      "video_url": "4433448_0_8893973807691736"
+    },
+    {
+      "title": "Class 15 || Relay & Circuit Breaker || Rajkumar Sir",
+      "id": "4433447",
+      "date": "07-Oct-2024 11:30",
+      "video_url": "4433447_0_1002547341332795"
+    },
+    {
+      "title": "Class 14 || Relay & Circuit Breaker || Rajkumar Sir",
+      "id": "4433446",
+      "date": "05-Oct-2024 11:30",
+      "video_url": "4433446_0_3356640191381450"
+    },
+    {
+      "title": "Class 13 || Relay & Circuit Breaker || Rajkumar Sir",
+      "id": "4433445",
+      "date": "04-Oct-2024 11:30",
+      "video_url": "4433445_0_2407757856288477"
+    },
+    {
+      "title": "Class 12 || Relay & Circuit Breaker || Rajkumar Sir",
+      "id": "4433444",
+      "date": "03-Oct-2024 11:30",
+      "video_url": "4433444_0_8542360323892227"
+    },
+    {
+      "title": "Class 11 || Relay & Circuit Breaker || Rajkumar Sir",
+      "id": "4433443",
+      "date": "01-Oct-2024 11:30",
+      "video_url": "4433443_0_6266009264016202"
+    },
+    {
+      "title": "Class 10 || Relay & Circuit Breaker || Rajkumar Sir",
+      "id": "4433442",
+      "date": "30-Sep-2024 11:30",
+      "video_url": "4433442_0_6362451457601635"
+    },
+    {
+      "title": "Class 09 || Underground Cable || Rajkumar Sir",
+      "id": "4433441",
+      "date": "28-Sep-2024 11:30",
+      "video_url": "4433441_0_3654781308930570"
+    },
+    {
+      "title": "Class 08 || Underground Cable || Rajkumar Sir",
+      "id": "4433440",
+      "date": "26-Sep-2024 11:30",
+      "video_url": "4433440_0_6952361405744045"
+    },
+    {
+      "title": "Class 07 || Underground Cable || Rajkumar Sir",
+      "id": "4433439",
+      "date": "24-Sep-2024 11:30",
+      "video_url": "4433439_0_8591151308541686"
+    },
+    {
+      "title": "Class 06 || Underground Cable || Rajkumar Sir",
+      "id": "4433438",
+      "date": "23-Sep-2024 11:30",
+      "video_url": "4433438_0_9566270566265742"
+    },
+    {
+      "title": "Class 05 || Underground Cable || Rajkumar Sir",
+      "id": "4433437",
+      "date": "21-Sep-2024 11:30",
+      "video_url": "4433437_0_9761984377253098"
+    },
+    {
+      "title": "Class 04 || Underground Cable || Rajkumar Sir",
+      "id": "4433436",
+      "date": "20-Sep-2024 11:30",
+      "video_url": "4433436_0_2513303186932459"
+    },
+    {
+      "title": "Class 03 || Underground Cable || Rajkumar Sir",
+      "id": "4433435",
+      "date": "19-Sep-2024 11:30",
+      "video_url": "4433435_0_5366145432900370"
+    },
+    {
+      "title": "Class 02 || Underground Cable || Rajkumar Sir",
+      "id": "4433434",
+      "date": "17-Sep-2024 11:30",
+      "video_url": "4433434_0_4661795158076983"
+    }
+  ],
+  "notes_total": 61,
+  "notes": [
+    {
+      "id": 544973,
+      "title": "SCR Notes",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/682852cbe932c_SCR544875crwill.pdf",
+      "date": "17-May-2025"
+    },
+    {
+      "id": 502683,
+      "title": "Amplifier",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d9353545d78_Amplifier.pdf",
+      "date": "18-Mar-2025"
+    },
+    {
+      "id": 501624,
+      "title": "illumination",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d300acc2dc7_illumination.pdf",
+      "date": "13-Mar-2025"
+    },
+    {
+      "id": 501618,
+      "title": "Digital Part 2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d2fc8d96529_Digital_Part_2.pdf",
+      "date": "13-Mar-2025"
+    },
+    {
+      "id": 501615,
+      "title": "Digital Part 1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d2fc20eb195_Digital_Part_1...pdf",
+      "date": "13-Mar-2025"
+    },
+    {
+      "id": 501611,
+      "title": "Safety & Health Notes",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d2f6e74ace5_Safety_Health_Notes...pdf",
+      "date": "13-Mar-2025"
+    },
+    {
+      "id": 501577,
+      "title": "Metal & Alloy( Electrician)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d2a1d291730_Metal_Alloy_Electrician.pdf",
+      "date": "13-Mar-2025"
+    },
+    {
+      "id": 501408,
+      "title": "illumination Notes",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d29fc7e5aab_illumination.pdf",
+      "date": "13-Mar-2025"
+    },
+    {
+      "id": 501398,
+      "title": "Digital Part-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d29e6c3ca31_Digital_Part_2_1.pdf",
+      "date": "13-Mar-2025"
+    },
+    {
+      "id": 501395,
+      "title": "Digital Part-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d29dfe09632_Digital_Part_1.._1.pdf",
+      "date": "13-Mar-2025"
+    },
+    {
+      "id": 501391,
+      "title": "Safety & Health Notes",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67d29cc81f062_Safety_Health_Notes...pdf",
+      "date": "13-Mar-2025"
+    },
+    {
+      "id": 492223,
+      "title": "Electric Appliances(\u092c\u0948\u0926\u094d\u092f\u0941\u0924 \u0909\u092a\u0915\u0930\u0923)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ba09cb63e41_Electric_Appliances_compressed.pdf",
+      "date": "22-Feb-2025"
+    },
+    {
+      "id": 492208,
+      "title": "Measurement Part 1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67ba0112cb459_Measurement_Part_1.pdf",
+      "date": "22-Feb-2025"
+    },
+    {
+      "id": 492201,
+      "title": "FET Notes",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67b9fca8eeb9d_FET_Notescompressed.pdf",
+      "date": "22-Feb-2025"
+    },
+    {
+      "id": 461200,
+      "title": "AC & DC Machine Winding.pdf",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67767043a7505_Ac_DC_Machine_Winding.pdf",
+      "date": "02-Jan-2025"
+    },
+    {
+      "id": 461194,
+      "title": "Electrical Wiring",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67766ffad9003_Electrical_Wiring.pdf",
+      "date": "02-Jan-2025"
+    },
+    {
+      "id": 461186,
+      "title": "Transmission Notes Part 2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67766f6b33e05_Transmission_Notes_Part_2.pdf",
+      "date": "02-Jan-2025"
+    },
+    {
+      "id": 461178,
+      "title": "Transmission Notes Part 1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67766e8b7e8bd_Transmission_Notes_Part_1.pdf",
+      "date": "02-Jan-2025"
+    },
+    {
+      "id": 446473,
+      "title": "Power Plant",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/673c364d90123_Power_Plant.pdf",
+      "date": "19-Nov-2024"
+    },
+    {
+      "id": 443171,
+      "title": "Relay & Circuit Breaker",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/672b59decb341_Relay_Circuit_Breaker_.pdf",
+      "date": "06-Nov-2024"
+    },
+    {
+      "id": 436695,
+      "title": "Underground Cable",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6704d7be4030f_Underground_Cable_.pdf",
+      "date": "08-Oct-2024"
+    },
+    {
+      "id": 430084,
+      "title": "Single Phase Motor Notes",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66f0e4119e933_Single_Phase_Motor_.pdf",
+      "date": "23-Sep-2024"
+    },
+    {
+      "id": 430078,
+      "title": "Transformer Part-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66f0e3cfe7bdb_Transformer_Part_2.pdf",
+      "date": "23-Sep-2024"
+    },
+    {
+      "id": 430073,
+      "title": "Transformer Part-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66f0e37e4784f_Transformer_Part_1compressed.pdf",
+      "date": "23-Sep-2024"
+    },
+    {
+      "id": 427336,
+      "title": "Magnet Part-1&2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66e40976ae526_Magnet Part 1&2_compressed.pdf",
+      "date": "13-Sep-2024"
+    },
+    {
+      "id": 427303,
+      "title": "Synchronous Machine Notes",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66e4055d60722_Synchronous Machine Notes_compressed.pdf",
+      "date": "13-Sep-2024"
+    },
+    {
+      "id": 424464,
+      "title": "DC Machine Part-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66dfd7bd6b711_DC Machine Part 2.pdf",
+      "date": "10-Sep-2024"
+    },
+    {
+      "id": 424458,
+      "title": "DC Machine Part-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66dfd6e257515_DC Machine Part 1.pdf",
+      "date": "10-Sep-2024"
+    },
+    {
+      "id": 413944,
+      "title": "3 Phase Induction Machine",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66bb50bed4fd3_3 Phase Induction Machine _compressed.pdf",
+      "date": "13-Aug-2024"
+    },
+    {
+      "id": 388564,
+      "title": "MS-EXCEL MCQs (English + Hindi)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712754-MS-EXCEL_MCQs_(ENGLISH_+_HINDI).pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388563,
+      "title": "MS-WORD MCQs (English + Hindi)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712754-MS-WORD_MCQs_(ENGLISH_+_HINDI).pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388562,
+      "title": "File Extensions",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712754-FILE_EXTENSIONS.pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388561,
+      "title": "Google Chrome Shortcut Keys",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712754-GOOGLE_CHROME_SHORTCUT_KEYS.pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388560,
+      "title": "MS-PPT Shortcut Keys",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712513-MS-PPT_SHORTCUT_KEYS.pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388559,
+      "title": "MS-Excel Shortcut Keys ",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712513-MS-EXCEL_SHORTCUT_KEYS.pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388558,
+      "title": "MS-Word Shortcut Keys",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712513-MS-WORD_SHORTCUT_KEYS.pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388557,
+      "title": "Windows Shortcut Keys",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712513-WINDOWS_SHORTCUT_KEYS.pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388556,
+      "title": "Full Forms",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712513-FULL_FORMS.pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388555,
+      "title": "History & Generation of Computer (English + Hindi)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712513-History_Generation_of_Computer_(ENGLISH_+_HINDI).pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388554,
+      "title": "2000 MCQs (English)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712313-2000_MCQs_(ENGLISH)_compressed.pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388553,
+      "title": "1000 MCQs (Hindi)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712196-1000_MCQs_(HINDI).pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388552,
+      "title": "1000 MCQs (English)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712196-1000_MCQs_(ENGLISH).pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388551,
+      "title": "MCQs Set - 9 (Hindi + English)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712147-MCQs_SET-9_(HINDI_+_ENGLISH).pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388550,
+      "title": "MCQs Set - 8 (Hindi + English)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712121-MCQs_SET-8_(HINDI_+_ENGLISH).pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388549,
+      "title": "MCQs Set - 7 (Hindi + English)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712121-MCQs_SET-7_(HINDI_+_ENGLISH).pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388548,
+      "title": "MCQs Set - 6 (Hindi + English)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712121-MCQs_SET-6_(HINDI_+_ENGLISH).pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388547,
+      "title": "MCQs Set - 5 (Hindi + English)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712084-MCQs_SET-5_(HINDI_+_ENGLISH).pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388546,
+      "title": "MCQs Set - 4 (Hindi + English)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712084-MCQs_SET-4_(HINDI_+_ENGLISH).pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388545,
+      "title": "MCQs Set - 3 (Hindi + English)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712084-MCQs_SET-3_(HINDI_+_ENGLISH).pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388544,
+      "title": "MCQs Set - 2 (Hindi + English)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712084-MCQs_SET-2_(HINDI_+_ENGLISH).pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 388543,
+      "title": "MCQs Set - 1 (Hindi + English)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1657712084-MCQs_SET-1_(HINDI_+_ENGLISH).pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 351283,
+      "title": "ITI Electrician Complete Notes",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1672312907-ITI_Electrician_Complete_Notes_compressed.pdf",
+      "date": "15-Mar-2024"
+    },
+    {
+      "id": 351274,
+      "title": "Basic Elec( AC ) Complete Notes",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1673263882-Basic_Elec(_AC_)Complete_Notes_(1).pdf",
+      "date": "15-Mar-2024"
+    },
+    {
+      "id": 351273,
+      "title": "Basic Elect (dc) Complete Notes",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/1672988949-Basic_Elect_(dc)_Complete_Notes.pdf",
+      "date": "15-Mar-2024"
+    },
+    {
+      "id": 351272,
+      "title": "BJT",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/659e9850bcf9d_BJT ( ITI)_compressed.pdf",
+      "date": "15-Mar-2024"
+    },
+    {
+      "id": 351271,
+      "title": "Rectifier ( ITI )",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/658af150bf576_Rectifier ( ITI ).pdf",
+      "date": "15-Mar-2024"
+    },
+    {
+      "id": 351270,
+      "title": "Diode (ITI)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6548a13aac2a2_Diode (ITI)_compressed.pdf",
+      "date": "15-Mar-2024"
+    },
+    {
+      "id": 351269,
+      "title": "Semiconductor Basics(ITI)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/653252245d886_Semiconductor Basics(ITI)_compressed.pdf",
+      "date": "15-Mar-2024"
+    },
+    {
+      "id": 351268,
+      "title": "Measuring Instrument Ques",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/64a518d0e5a95_Measuring Instrument Ques_compressed.pdf",
+      "date": "15-Mar-2024"
+    },
+    {
+      "id": 351267,
+      "title": "Transmission & Distribution Ques Part-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/64788f0506516_Transmission & Distribution Ques part-2.pdf",
+      "date": "15-Mar-2024"
+    },
+    {
+      "id": 351266,
+      "title": "Transmission & Distribution Ques Part-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/64788eafb4090_Transmission & Distribution Ques part-1.pdf",
+      "date": "15-Mar-2024"
+    }
+  ]
+}
