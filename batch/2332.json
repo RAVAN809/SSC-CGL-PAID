@@ -1,1 +1,98 @@
 {}
+{
+  "batch_id": 2332,
+  "topics": [
+    {
+      "id": 22960,
+      "topicName": "Arith (S Sir)"
+    },
+    {
+      "id": 22977,
+      "topicName": "Adv (A Sir)"
+    },
+    {
+      "id": 22969,
+      "topicName": "English"
+    },
+    {
+      "id": 22968,
+      "topicName": "Reasoning"
+    },
+    {
+      "id": 22967,
+      "topicName": "History"
+    },
+    {
+      "id": 22966,
+      "topicName": "Geography"
+    },
+    {
+      "id": 22965,
+      "topicName": "Polity"
+    },
+    {
+      "id": 22964,
+      "topicName": "Economy"
+    },
+    {
+      "id": 22963,
+      "topicName": "Physics"
+    },
+    {
+      "id": 26831,
+      "topicName": "Chemistry"
+    },
+    {
+      "id": 22961,
+      "topicName": "Biology"
+    },
+    {
+      "id": 22970,
+      "topicName": "Comp. (VOD)"
+    },
+    {
+      "id": 22974,
+      "topicName": "Comp"
+    },
+    {
+      "id": 25195,
+      "topicName": "Grammar Study Material"
+    },
+    {
+      "id": 25194,
+      "topicName": "Vocab Batch on App"
+    },
+    {
+      "id": 25193,
+      "topicName": "Comprehension Study Material"
+    },
+    {
+      "id": 25192,
+      "topicName": "Mixed & Previous Year Study Material"
+    },
+    {
+      "id": 25141,
+      "topicName": "Vocab Class"
+    },
+    {
+      "id": 25140,
+      "topicName": "Eng VOD Class"
+    },
+    {
+      "id": 28683,
+      "topicName": "Vocab"
+    },
+    {
+      "id": 24692,
+      "topicName": "Vocab Batch on YouTube"
+    },
+    {
+      "id": 29481,
+      "topicName": "Static GK"
+    },
+    {
+      "id": 29895,
+      "topicName": "Bhagwati Sir Maths"
+    }
+  ]
+}
