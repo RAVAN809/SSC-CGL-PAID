@@ -1,0 +1,41 @@
+{
+  "batch_id": 2382,
+  "topics": [
+    {
+      "id": 23686,
+      "topicName": "Intro/Syllabus"
+    },
+    {
+      "id": 23746,
+      "topicName": "Arith Class Png"
+    },
+    {
+      "id": 23745,
+      "topicName": "Arith Class Sheet"
+    },
+    {
+      "id": 23744,
+      "topicName": "Arith Class Notes"
+    },
+    {
+      "id": 23743,
+      "topicName": "Adv Class Png"
+    },
+    {
+      "id": 23742,
+      "topicName": "Adv Class Sheet"
+    },
+    {
+      "id": 23741,
+      "topicName": "Adv Class Notes"
+    },
+    {
+      "id": 23665,
+      "topicName": "Advance"
+    },
+    {
+      "id": 23666,
+      "topicName": "Arithmetic"
+    }
+  ]
+}
