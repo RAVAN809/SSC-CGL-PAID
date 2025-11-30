@@ -1,0 +1,1840 @@
+{
+  "batchid": 2158,
+  "topicid": 20078,
+  "classes_total": 202,
+  "classes": [
+    {
+      "title": "Class-16 || Complete Installment of SI and CI (\u0915\u093f\u0938\u094d\u0924\u094b\u0902 \u0935\u093e\u0932\u0947 \u0938\u0935\u093e\u0932) || By Gagan Pratap Sir",
+      "id": "4430845",
+      "date": "28-Dec-2024 16:00",
+      "video_url": "4430845_0_8477604445553753"
+    },
+    {
+      "title": "Class-15 || Compound Interest",
+      "id": "4430844",
+      "date": "28-Dec-2024 12:00",
+      "video_url": "4430844_0_4931518610406571"
+    },
+    {
+      "title": "Class-14 || Compound Interest",
+      "id": "4430843",
+      "date": "27-Dec-2024 12:00",
+      "video_url": "4430843_0_7510258974425099"
+    },
+    {
+      "title": "Class-13 || Compound Interest",
+      "id": "4430842",
+      "date": "26-Dec-2024 12:00",
+      "video_url": "4430842_0_4423610015298603"
+    },
+    {
+      "title": "Class-12 || Compound Interest",
+      "id": "4430841",
+      "date": "25-Dec-2024 12:00",
+      "video_url": "4430841_0_9976639253018713"
+    },
+    {
+      "title": "Class-11 || Compound Interest",
+      "id": "4430840",
+      "date": "24-Dec-2024 12:00",
+      "video_url": "4430840_0_5224703355683710"
+    },
+    {
+      "title": "Class-10 || Compound Interest",
+      "id": "4430839",
+      "date": "23-Dec-2024 12:00",
+      "video_url": "4430839_0_4753275203375001"
+    },
+    {
+      "title": "Class-09 || Compound Interest",
+      "id": "4430838",
+      "date": "21-Dec-2024 12:00",
+      "video_url": "4430838_0_5162085063040477"
+    },
+    {
+      "title": "Class-08 || Compound Interest",
+      "id": "4430837",
+      "date": "20-Dec-2024 12:00",
+      "video_url": "4430837_0_9564933205524532"
+    },
+    {
+      "title": "Class-07 || Compound Interest",
+      "id": "4430836",
+      "date": "19-Dec-2024 12:00",
+      "video_url": "4430836_0_5819262404317625"
+    },
+    {
+      "title": "Class-06 || Compound Interest",
+      "id": "4430835",
+      "date": "18-Dec-2024 12:00",
+      "video_url": "4430835_0_4652763020151777"
+    },
+    {
+      "title": "Class-05 || Compound Interest",
+      "id": "4430834",
+      "date": "13-Dec-2024 12:00",
+      "video_url": "4430834_0_3520694382547269"
+    },
+    {
+      "title": "Class-04 || Compound Interest",
+      "id": "4507446",
+      "date": "12-Dec-2024 12:00",
+      "video_url": "4507446_0_9395375650393293"
+    },
+    {
+      "title": "Class-03 || Compound Interest",
+      "id": "4430833",
+      "date": "11-Dec-2024 12:00",
+      "video_url": "4430833_0_1742376577179734"
+    },
+    {
+      "title": "Class-02 || Compound Interest",
+      "id": "4430832",
+      "date": "10-Dec-2024 12:00",
+      "video_url": "4430832_0_7153253567644663"
+    },
+    {
+      "title": "Class-1 || Compound Interest",
+      "id": "4430831",
+      "date": "09-Dec-2024 12:00",
+      "video_url": "4430831_0_4965979690889703"
+    },
+    {
+      "title": "Class-12 || Simple Intrest",
+      "id": "4430830",
+      "date": "07-Dec-2024 12:00",
+      "video_url": "4430830_0_7597687923105251"
+    },
+    {
+      "title": "Class-11 || Simple Intrest",
+      "id": "4430829",
+      "date": "06-Dec-2024 12:00",
+      "video_url": "4430829_0_3938417481914860"
+    },
+    {
+      "title": "Class-10 || Simple Intrest",
+      "id": "4430828",
+      "date": "05-Dec-2024 12:00",
+      "video_url": "4430828_0_2127316367639972"
+    },
+    {
+      "title": "Class-09 || Simple Intrest",
+      "id": "4430827",
+      "date": "04-Dec-2024 12:00",
+      "video_url": "4430827_0_4832806018647155"
+    },
+    {
+      "title": "Class-08 || Simple Intrest",
+      "id": "4430826",
+      "date": "03-Dec-2024 12:00",
+      "video_url": "4430826_0_6085519999945876"
+    },
+    {
+      "title": "Class-07 || Simple Intrest",
+      "id": "4430825",
+      "date": "02-Dec-2024 12:00",
+      "video_url": "4430825_0_7616249003840070"
+    },
+    {
+      "title": "Class-06 || Simple Intrest",
+      "id": "4430824",
+      "date": "29-Nov-2024 12:00",
+      "video_url": "4430824_0_8278804523163178"
+    },
+    {
+      "title": "Class-05 || Simple Intrest",
+      "id": "4430823",
+      "date": "28-Nov-2024 12:00",
+      "video_url": "4430823_0_2136301550878180"
+    },
+    {
+      "title": "Class-04 || Simple Intrest",
+      "id": "4430822",
+      "date": "27-Nov-2024 12:00",
+      "video_url": "4430822_0_5054707454765599"
+    },
+    {
+      "title": "Class-03 || Simple Intrest",
+      "id": "4430821",
+      "date": "26-Nov-2024 12:00",
+      "video_url": "4430821_0_1479734098051315"
+    },
+    {
+      "title": "Class-02 || Simple Intrest",
+      "id": "4430820",
+      "date": "25-Nov-2024 12:00",
+      "video_url": "4430820_0_3297486312618483"
+    },
+    {
+      "title": "Class-1 || Simple Intrest",
+      "id": "4430819",
+      "date": "22-Nov-2024 12:00",
+      "video_url": "4430819_0_8208857508616806"
+    },
+    {
+      "title": "Class -16 || Mixture and Alligation",
+      "id": "4430818",
+      "date": "21-Nov-2024 12:00",
+      "video_url": "4430818_0_3483828621945855"
+    },
+    {
+      "title": "Class -15 || Mixture and Alligation",
+      "id": "4430817",
+      "date": "20-Nov-2024 12:00",
+      "video_url": "4430817_0_2234186966025681"
+    },
+    {
+      "title": "Class -14 || Mixture and Alligation",
+      "id": "4430816",
+      "date": "19-Nov-2024 12:00",
+      "video_url": "4430816_0_3538949918227128"
+    },
+    {
+      "title": "Class -13 || Mixture and Alligation",
+      "id": "4430815",
+      "date": "15-Nov-2024 12:00",
+      "video_url": "4430815_0_6379488820200359"
+    },
+    {
+      "title": "Class -12 || Mixture and Alligation",
+      "id": "4430814",
+      "date": "13-Nov-2024 12:00",
+      "video_url": "4430814_0_2745307384095371"
+    },
+    {
+      "title": "Class -11 || Mixture and Alligation",
+      "id": "4430813",
+      "date": "12-Nov-2024 12:00",
+      "video_url": "4430813_0_2402729081266393"
+    },
+    {
+      "title": "Class -10 || Mixture and Alligation",
+      "id": "4430812",
+      "date": "11-Nov-2024 12:00",
+      "video_url": "4430812_0_6900904867256051"
+    },
+    {
+      "title": "Class -09 || Mixture and Alligation",
+      "id": "4430811",
+      "date": "08-Nov-2024 12:00",
+      "video_url": "4430811_0_5343116493642427"
+    },
+    {
+      "title": "Class -08 || Mixture and Alligation",
+      "id": "4430810",
+      "date": "07-Nov-2024 12:00",
+      "video_url": "4430810_0_5349924529896572"
+    },
+    {
+      "title": "Class -07 || Mixture and Alligation",
+      "id": "4430809",
+      "date": "06-Nov-2024 12:00",
+      "video_url": "4430809_0_7948822520204712"
+    },
+    {
+      "title": "Class -06 || Mixture and Alligation",
+      "id": "4430808",
+      "date": "05-Nov-2024 12:00",
+      "video_url": "4430808_0_1197989682343173"
+    },
+    {
+      "title": "Class -05 || Mixture and Alligation",
+      "id": "4430806",
+      "date": "04-Nov-2024 12:00",
+      "video_url": "4430806_0_6543570653368440"
+    },
+    {
+      "title": "Class-04 | Maths || Mixture and Alligation",
+      "id": "4430804",
+      "date": "26-Oct-2024 12:00",
+      "video_url": "4430804_0_6623236089723356"
+    },
+    {
+      "title": "Class-03 | Maths || Mixture and Alligation",
+      "id": "4430803",
+      "date": "25-Oct-2024 12:00",
+      "video_url": "4430803_0_2708873961306659"
+    },
+    {
+      "title": "Class-02 | Maths || Mixture and Alligation",
+      "id": "4430801",
+      "date": "24-Oct-2024 12:00",
+      "video_url": "4430801_0_8102942983695973"
+    },
+    {
+      "title": "Class-1 | Maths || Mixture and Alligation",
+      "id": "4430799",
+      "date": "23-Oct-2024 12:00",
+      "video_url": "4430799_0_5103119477619962"
+    },
+    {
+      "title": "Class -11 | Maths || Average",
+      "id": "4430797",
+      "date": "22-Oct-2024 12:00",
+      "video_url": "4430797_0_9809951258093644"
+    },
+    {
+      "title": "Class -10 | Maths || Average",
+      "id": "4430795",
+      "date": "21-Oct-2024 12:00",
+      "video_url": "4430795_0_3103979799602080"
+    },
+    {
+      "title": "Class -09 | Maths || Average",
+      "id": "4430793",
+      "date": "17-Oct-2024 12:00",
+      "video_url": "4430793_0_7429858074113981"
+    },
+    {
+      "title": "Class -08 | Maths || Average",
+      "id": "4430791",
+      "date": "16-Oct-2024 12:00",
+      "video_url": "4430791_0_3677246486333010"
+    },
+    {
+      "title": "Class -06 | Maths || Average",
+      "id": "4430788",
+      "date": "14-Oct-2024 11:00",
+      "video_url": "4430788_0_4433013014935648"
+    },
+    {
+      "title": "Class -05 | Maths || Average",
+      "id": "4430786",
+      "date": "11-Oct-2024 11:00",
+      "video_url": "4430786_0_1620112880640581"
+    },
+    {
+      "title": "Class -04 | Maths || Average",
+      "id": "4430784",
+      "date": "10-Oct-2024 11:00",
+      "video_url": "4430784_0_3261916515828516"
+    },
+    {
+      "title": "Class -03 | Maths || Average",
+      "id": "4430782",
+      "date": "09-Oct-2024 11:00",
+      "video_url": "4430782_0_8587391526229936"
+    },
+    {
+      "title": "Class -02 | Maths || Average",
+      "id": "4430780",
+      "date": "08-Oct-2024 11:00",
+      "video_url": "4430780_0_3008160766371167"
+    },
+    {
+      "title": "Class -01 | Maths || Average",
+      "id": "4430778",
+      "date": "07-Oct-2024 11:00",
+      "video_url": "4430778_0_8980463249741882"
+    },
+    {
+      "title": "Class -04 | Maths || Partnership",
+      "id": "4430777",
+      "date": "05-Oct-2024 11:00",
+      "video_url": "4430777_0_6304877061643873"
+    },
+    {
+      "title": "Class -03 | Maths || Partnership",
+      "id": "4430776",
+      "date": "04-Oct-2024 11:00",
+      "video_url": "4430776_0_1244354500756070"
+    },
+    {
+      "title": "Class -02 | Maths || Partnership",
+      "id": "4430774",
+      "date": "03-Oct-2024 11:00",
+      "video_url": "4430774_0_8877595148876517"
+    },
+    {
+      "title": "Arith | Class -03 | Miscellaneous (Dishonest Shopkeeper)",
+      "id": "4429130",
+      "date": "30-Sep-2024 13:04",
+      "video_url": "4429130_0_5072899429743885"
+    },
+    {
+      "title": "Arith | Class -02| Miscellaneous (Dishonest Shopkeeper)",
+      "id": "4429129",
+      "date": "30-Sep-2024 13:02",
+      "video_url": "4429129_0_2550917836812390"
+    },
+    {
+      "title": "Arith | Class -01 | Miscellaneous (Dishonest Shopkeeper)",
+      "id": "4429128",
+      "date": "30-Sep-2024 13:00",
+      "video_url": "4429128_0_3699233539911958"
+    },
+    {
+      "title": "Class -1  | Maths || Partnership",
+      "id": "4430772",
+      "date": "30-Sep-2024 11:15",
+      "video_url": "4430772_0_3553902847962689"
+    },
+    {
+      "title": "Class-14 | Maths | Discount",
+      "id": "4430770",
+      "date": "28-Sep-2024 11:00",
+      "video_url": "4430770_0_5112774958079094"
+    },
+    {
+      "title": "Class-13 | Maths | Discount",
+      "id": "4430768",
+      "date": "27-Sep-2024 11:00",
+      "video_url": "4430768_0_8186626327725515"
+    },
+    {
+      "title": "Class-12 | Maths | Discount",
+      "id": "4430766",
+      "date": "26-Sep-2024 11:00",
+      "video_url": "4430766_0_4621222541305484"
+    },
+    {
+      "title": "Class-11 | Maths | Discount",
+      "id": "4430764",
+      "date": "25-Sep-2024 11:00",
+      "video_url": "4430764_0_4113659978212969"
+    },
+    {
+      "title": "Class-10 | Maths | Discount",
+      "id": "4430761",
+      "date": "24-Sep-2024 11:00",
+      "video_url": "4430761_0_1405229614860327"
+    },
+    {
+      "title": "Class-09 | Maths | Discount",
+      "id": "4430759",
+      "date": "19-Sep-2024 11:00",
+      "video_url": "4430759_0_4397992829138676"
+    },
+    {
+      "title": "Class-08 | Maths | Discount",
+      "id": "4430757",
+      "date": "18-Sep-2024 11:00",
+      "video_url": "4430757_0_1106438946720931"
+    },
+    {
+      "title": "Class-07 | Maths | Discount",
+      "id": "4430756",
+      "date": "17-Sep-2024 11:00",
+      "video_url": "4430756_0_4132187223283181"
+    },
+    {
+      "title": "Class-06 | Maths | Discount",
+      "id": "4430754",
+      "date": "16-Sep-2024 11:00",
+      "video_url": "4430754_0_5284917139635853"
+    },
+    {
+      "title": "Class-05 | Maths | Discount",
+      "id": "4430753",
+      "date": "14-Sep-2024 11:00",
+      "video_url": "4430753_0_7853957956557066"
+    },
+    {
+      "title": "Class-04 | Maths | Discount",
+      "id": "4430751",
+      "date": "13-Sep-2024 11:00",
+      "video_url": "4430751_0_9944589573416860"
+    },
+    {
+      "title": "Class-03 || Discount",
+      "id": "4430749",
+      "date": "12-Sep-2024 11:00",
+      "video_url": "4430749_0_2760261593678072"
+    },
+    {
+      "title": "Class-02 || Discount",
+      "id": "4430747",
+      "date": "11-Sep-2024 11:00",
+      "video_url": "4430747_0_7122916972622420"
+    },
+    {
+      "title": "Class-1 || Discount",
+      "id": "4430746",
+      "date": "07-Sep-2024 11:00",
+      "video_url": "4430746_0_9166478315397520"
+    },
+    {
+      "title": "Class-16 || Profit and Loss",
+      "id": "4430744",
+      "date": "06-Sep-2024 11:00",
+      "video_url": "4430744_0_8334126663468116"
+    },
+    {
+      "title": "Well wishes for Happy Teachers day by Gagan Pratap Sir",
+      "id": "4430742",
+      "date": "05-Sep-2024 11:00",
+      "video_url": "4430742_0_1695485654636085"
+    },
+    {
+      "title": "Class-14 || Profit and Loss",
+      "id": "4430739",
+      "date": "03-Sep-2024 11:00",
+      "video_url": "4430739_0_2853775590605560"
+    },
+    {
+      "title": "Class-13 || Profit and Loss",
+      "id": "4430738",
+      "date": "02-Sep-2024 11:00",
+      "video_url": "4430738_0_7796732226399304"
+    },
+    {
+      "title": "Class-12 || Profit and Loss",
+      "id": "4430736",
+      "date": "30-Aug-2024 11:00",
+      "video_url": "4430736_0_1349982304693644"
+    },
+    {
+      "title": "Class-11 || Profit and Loss",
+      "id": "4430734",
+      "date": "29-Aug-2024 11:00",
+      "video_url": "4430734_0_3052984968801831"
+    },
+    {
+      "title": "Class-10 || Profit and Loss",
+      "id": "4430732",
+      "date": "28-Aug-2024 11:00",
+      "video_url": "4430732_0_4666861772631203"
+    },
+    {
+      "title": "Class-09 || Profit and Loss",
+      "id": "4430730",
+      "date": "27-Aug-2024 11:00",
+      "video_url": "4430730_0_3067752706188510"
+    },
+    {
+      "title": "Class-08 || Profit and Loss",
+      "id": "4430729",
+      "date": "24-Aug-2024 11:00",
+      "video_url": "4430729_0_3029934208377583"
+    },
+    {
+      "title": "Class-07 || Profit and Loss",
+      "id": "4430728",
+      "date": "23-Aug-2024 11:00",
+      "video_url": "4430728_0_3055049722028856"
+    },
+    {
+      "title": "Class-06 || Profit and Loss",
+      "id": "4430726",
+      "date": "22-Aug-2024 11:00",
+      "video_url": "4430726_0_4582344368322561"
+    },
+    {
+      "title": "Class-05 || Profit and Loss",
+      "id": "4430725",
+      "date": "14-Aug-2024 11:00",
+      "video_url": "4430725_0_6558781195328283"
+    },
+    {
+      "title": "Class-04 || Profit and Loss",
+      "id": "4430723",
+      "date": "13-Aug-2024 11:00",
+      "video_url": "4430723_0_5254918277640035"
+    },
+    {
+      "title": "Class-03 || Race",
+      "id": "4429031",
+      "date": "13-Aug-2024 10:04",
+      "video_url": "4429031_0_2587133097398775"
+    },
+    {
+      "title": "Class-02 || Race",
+      "id": "4429029",
+      "date": "13-Aug-2024 10:02",
+      "video_url": "4429029_0_2243788192411863"
+    },
+    {
+      "title": "Class-1 || Race",
+      "id": "4429027",
+      "date": "13-Aug-2024 10:00",
+      "video_url": "4429027_0_7911964594851068"
+    },
+    {
+      "title": "Class-03 || Train",
+      "id": "4430719",
+      "date": "12-Aug-2024 16:00",
+      "video_url": "4430719_0_3585679541208007"
+    },
+    {
+      "title": "Class-03 || Profit and Loss",
+      "id": "4430721",
+      "date": "12-Aug-2024 11:00",
+      "video_url": "4430721_0_9271853897740206"
+    },
+    {
+      "title": "Class-2 || Train",
+      "id": "4430718",
+      "date": "10-Aug-2024 16:00",
+      "video_url": "4430718_0_8142806804217120"
+    },
+    {
+      "title": "Class-02 || Profit and Loss",
+      "id": "4430717",
+      "date": "10-Aug-2024 11:00",
+      "video_url": "4430717_0_3899443114258593"
+    },
+    {
+      "title": "Class-1 || Train",
+      "id": "4430715",
+      "date": "09-Aug-2024 16:00",
+      "video_url": "4430715_0_8812400038565226"
+    },
+    {
+      "title": "Class-1 || Profit and Loss",
+      "id": "4430714",
+      "date": "09-Aug-2024 11:00",
+      "video_url": "4430714_0_7115681143692589"
+    },
+    {
+      "title": "Class -06 || Boat and Stream",
+      "id": "4430711",
+      "date": "08-Aug-2024 16:00",
+      "video_url": "4430711_0_1511930040721761"
+    },
+    {
+      "title": "Class-02 || Problem on Ages",
+      "id": "4430713",
+      "date": "08-Aug-2024 11:00",
+      "video_url": "4430713_0_8565125370107567"
+    },
+    {
+      "title": "Class -05 || Boat and Stream",
+      "id": "4430709",
+      "date": "07-Aug-2024 16:30",
+      "video_url": "4430709_0_9763817817017114"
+    },
+    {
+      "title": "Class-1 || Problem on Ages",
+      "id": "4449432",
+      "date": "07-Aug-2024 11:00",
+      "video_url": "4449432_0_9611735152695889"
+    },
+    {
+      "title": "Class -04 || Boat and Stream",
+      "id": "4430707",
+      "date": "06-Aug-2024 16:00",
+      "video_url": "4430707_0_8022110007554820"
+    },
+    {
+      "title": "Class -3 || Boat and Stream",
+      "id": "4430705",
+      "date": "05-Aug-2024 16:00",
+      "video_url": "4430705_0_2839247256592096"
+    },
+    {
+      "title": "Class -2 || Boat and Stream",
+      "id": "4430704",
+      "date": "03-Aug-2024 16:00",
+      "video_url": "4430704_0_9784234680527422"
+    },
+    {
+      "title": "Class -1 || Boat and Stream",
+      "id": "4430702",
+      "date": "02-Aug-2024 16:30",
+      "video_url": "4430702_0_7005864177261163"
+    },
+    {
+      "title": "Class-25 || Time, Speed and Distance",
+      "id": "4430700",
+      "date": "01-Aug-2024 16:00",
+      "video_url": "4430700_0_1405998295805564"
+    },
+    {
+      "title": "Class-24 || Time, Speed and Distance",
+      "id": "4430698",
+      "date": "31-Jul-2024 16:30",
+      "video_url": "4430698_0_6171164416166305"
+    },
+    {
+      "title": "Class-23 || Time, Speed and Distance",
+      "id": "4430695",
+      "date": "30-Jul-2024 16:00",
+      "video_url": "4430695_0_6509093820569314"
+    },
+    {
+      "title": "Class-22 || Time, Speed and Distance",
+      "id": "4430693",
+      "date": "26-Jul-2024 16:00",
+      "video_url": "4430693_0_3319504173759058"
+    },
+    {
+      "title": "Class-21 || Time, Speed and Distance",
+      "id": "4449431",
+      "date": "25-Jul-2024 16:30",
+      "video_url": "4449431_0_9613850680219044"
+    },
+    {
+      "title": "Class-20 || Time, Speed and Distance",
+      "id": "4430689",
+      "date": "24-Jul-2024 16:30",
+      "video_url": "4430689_0_9664897288063483"
+    },
+    {
+      "title": "Class-19 || Time, Speed and Distance",
+      "id": "4430686",
+      "date": "23-Jul-2024 16:00",
+      "video_url": "4430686_0_4585045400165831"
+    },
+    {
+      "title": "Class-18 || Time, Speed and Distance",
+      "id": "4430684",
+      "date": "22-Jul-2024 16:30",
+      "video_url": "4430684_0_1731802771851322"
+    },
+    {
+      "title": "Class-17 || Time, Speed and Distance",
+      "id": "4430681",
+      "date": "19-Jul-2024 16:30",
+      "video_url": "4430681_0_9888431347426674"
+    },
+    {
+      "title": "Class-16 || Time, Speed and Distance",
+      "id": "4430679",
+      "date": "18-Jul-2024 16:00",
+      "video_url": "4430679_0_9426501318184134"
+    },
+    {
+      "title": "Class-15 || Time, Speed and Distance",
+      "id": "4430677",
+      "date": "17-Jul-2024 16:00",
+      "video_url": "4430677_0_8374627397169963"
+    },
+    {
+      "title": "Class-14 || Time, Speed and Distance",
+      "id": "4430675",
+      "date": "16-Jul-2024 16:30",
+      "video_url": "4430675_0_1489829961240190"
+    },
+    {
+      "title": "Class-13 || Time, Speed and Distance",
+      "id": "4430673",
+      "date": "15-Jul-2024 16:00",
+      "video_url": "4430673_0_3468920047670509"
+    },
+    {
+      "title": "Class-11 || Time, Speed and Distance",
+      "id": "4430670",
+      "date": "11-Jul-2024 16:00",
+      "video_url": "4430670_0_6460564388190927"
+    },
+    {
+      "title": "Class-10 || Time, Speed and Distance",
+      "id": "4430667",
+      "date": "09-Jul-2024 16:30",
+      "video_url": "4430667_0_1489529259732787"
+    },
+    {
+      "title": "Class-09 || Time, Speed and Distance",
+      "id": "4430665",
+      "date": "08-Jul-2024 16:00",
+      "video_url": "4430665_0_7455448669021659"
+    },
+    {
+      "title": "Class-08 || Time, Speed and Distance",
+      "id": "4430663",
+      "date": "05-Jul-2024 16:00",
+      "video_url": "4430663_0_9053895370362736"
+    },
+    {
+      "title": "Class-07 || Time, Speed and Distance",
+      "id": "4430661",
+      "date": "04-Jul-2024 16:30",
+      "video_url": "4430661_0_4306739769073858"
+    },
+    {
+      "title": "Class-06 || Time, Speed and Distance",
+      "id": "4430659",
+      "date": "03-Jul-2024 16:00",
+      "video_url": "4430659_0_3739620281146552"
+    },
+    {
+      "title": "Class-05 || Time, Speed and Distance",
+      "id": "4430657",
+      "date": "02-Jul-2024 16:00",
+      "video_url": "4430657_0_1740577053233910"
+    },
+    {
+      "title": "Class-04 || Time, Speed and Distance",
+      "id": "4430655",
+      "date": "01-Jul-2024 16:30",
+      "video_url": "4430655_0_6911065520049816"
+    },
+    {
+      "title": "Class-03 || Time, Speed and Distance",
+      "id": "4430653",
+      "date": "28-Jun-2024 16:30",
+      "video_url": "4430653_0_3977949638211652"
+    },
+    {
+      "title": "Class-02 || Time, Speed and Distance",
+      "id": "4430651",
+      "date": "27-Jun-2024 16:00",
+      "video_url": "4430651_0_5738636662194623"
+    },
+    {
+      "title": "Class-1 || Time, Speed and Distance",
+      "id": "4430649",
+      "date": "26-Jun-2024 16:30",
+      "video_url": "4430649_0_5292014886051342"
+    },
+    {
+      "title": "Class-08 || Pipe and Cistern",
+      "id": "4430647",
+      "date": "25-Jun-2024 16:00",
+      "video_url": "4430647_0_4771936755541003"
+    },
+    {
+      "title": "Class-07 || Pipe and Cistern",
+      "id": "4430645",
+      "date": "24-Jun-2024 16:00",
+      "video_url": "4430645_0_9912035223854240"
+    },
+    {
+      "title": "Class-06 || Pipe and Cistern",
+      "id": "4430643",
+      "date": "21-Jun-2024 16:00",
+      "video_url": "4430643_0_8037705067980490"
+    },
+    {
+      "title": "Class-05 || Pipe and Cistern",
+      "id": "4430641",
+      "date": "20-Jun-2024 16:00",
+      "video_url": "4430641_0_1247391137487245"
+    },
+    {
+      "title": "Class-04 || Pipe and Cistern",
+      "id": "4430640",
+      "date": "19-Jun-2024 16:00",
+      "video_url": "4430640_0_4051833257499609"
+    },
+    {
+      "title": "Class-03 || Pipe and Cistern",
+      "id": "4430639",
+      "date": "18-Jun-2024 16:00",
+      "video_url": "4430639_0_4856167582491149"
+    },
+    {
+      "title": "Class-02 || Pipe and Cistern",
+      "id": "4430636",
+      "date": "14-Jun-2024 16:00",
+      "video_url": "4430636_0_7218659153968933"
+    },
+    {
+      "title": "Class-1 || Pipe and Cistern",
+      "id": "4430634",
+      "date": "13-Jun-2024 16:00",
+      "video_url": "4430634_0_7314261178819053"
+    },
+    {
+      "title": "Class-22 || Time and Work",
+      "id": "4430632",
+      "date": "12-Jun-2024 16:00",
+      "video_url": "4430632_0_3769975575377715"
+    },
+    {
+      "title": "Class-21 || Time and Work",
+      "id": "4430629",
+      "date": "10-Jun-2024 16:00",
+      "video_url": "4430629_0_6468263244413448"
+    },
+    {
+      "title": "Class-20 || Time and Work",
+      "id": "4430627",
+      "date": "03-Jun-2024 16:00",
+      "video_url": "4430627_0_1091901118297124"
+    },
+    {
+      "title": "Class-19 || Time and Work",
+      "id": "4430625",
+      "date": "01-Jun-2024 16:30",
+      "video_url": "4430625_0_1103869363715327"
+    },
+    {
+      "title": "Class-18 || Time and Work",
+      "id": "4430623",
+      "date": "31-May-2024 16:00",
+      "video_url": "4430623_0_6994151419999263"
+    },
+    {
+      "title": "Class-17 || Time and Work",
+      "id": "4430621",
+      "date": "30-May-2024 16:00",
+      "video_url": "4430621_0_8778449141719825"
+    },
+    {
+      "title": "Class-16 || Time and Work",
+      "id": "4430619",
+      "date": "29-May-2024 16:30",
+      "video_url": "4430619_0_9408236194463263"
+    },
+    {
+      "title": "Class-15 || Time and Work",
+      "id": "4430617",
+      "date": "28-May-2024 16:00",
+      "video_url": "4430617_0_4166376073972974"
+    },
+    {
+      "title": "Class-14 || Time and Work",
+      "id": "4430615",
+      "date": "27-May-2024 16:30",
+      "video_url": "4430615_0_5788462079916589"
+    },
+    {
+      "title": "Class-13 || Time and Work",
+      "id": "4430613",
+      "date": "24-May-2024 16:30",
+      "video_url": "4430613_0_5799926298928266"
+    },
+    {
+      "title": "Class-12 || Time and Work",
+      "id": "4430611",
+      "date": "23-May-2024 16:00",
+      "video_url": "4430611_0_5054965275841582"
+    },
+    {
+      "title": "Class-11 || Time and Work",
+      "id": "4430609",
+      "date": "22-May-2024 16:00",
+      "video_url": "4430609_0_8921706386461359"
+    },
+    {
+      "title": "Class-08 || Time and Work",
+      "id": "4430605",
+      "date": "16-May-2024 16:00",
+      "video_url": "4430605_0_3357857857760214"
+    },
+    {
+      "title": "Class-07 || Time and Work",
+      "id": "4430603",
+      "date": "15-May-2024 16:00",
+      "video_url": "4430603_0_1889819568745252"
+    },
+    {
+      "title": "Class-06 || Time and Work",
+      "id": "4430601",
+      "date": "14-May-2024 16:00",
+      "video_url": "4430601_0_9402814975789926"
+    },
+    {
+      "title": "Class-05 || Time and Work",
+      "id": "4430598",
+      "date": "13-May-2024 16:00",
+      "video_url": "4430598_0_6665033306814970"
+    },
+    {
+      "title": "Class-04 || Time and Work",
+      "id": "4430595",
+      "date": "10-May-2024 16:00",
+      "video_url": "4430595_0_5548408023067900"
+    },
+    {
+      "title": "Class-03 || Time and Work",
+      "id": "4430594",
+      "date": "09-May-2024 16:00",
+      "video_url": "4430594_0_7281273627372561"
+    },
+    {
+      "title": "Class-02 || Time and Work",
+      "id": "4430592",
+      "date": "08-May-2024 16:00",
+      "video_url": "4430592_0_3264705330670061"
+    },
+    {
+      "title": "Class-01 || Time and Work",
+      "id": "4430589",
+      "date": "07-May-2024 16:00",
+      "video_url": "4430589_0_7130171009338053"
+    },
+    {
+      "title": "Class-18 || Ratio",
+      "id": "4430584",
+      "date": "06-May-2024 16:30",
+      "video_url": "4430584_0_6027276437841412"
+    },
+    {
+      "title": "Class-17 || Ratio",
+      "id": "4430581",
+      "date": "03-May-2024 16:00",
+      "video_url": "4430581_0_1809276603677057"
+    },
+    {
+      "title": "Class-16 || Ratio",
+      "id": "4430578",
+      "date": "02-May-2024 16:00",
+      "video_url": "4430578_0_5499020176917365"
+    },
+    {
+      "title": "Class-15 || Ratio",
+      "id": "4430574",
+      "date": "01-May-2024 16:30",
+      "video_url": "4430574_0_9590792969164946"
+    },
+    {
+      "title": "Class-14 || Ratio",
+      "id": "4430571",
+      "date": "30-Apr-2024 16:00",
+      "video_url": "4430571_0_2305924286499092"
+    },
+    {
+      "title": "Class-13 || Ratio",
+      "id": "4430570",
+      "date": "29-Apr-2024 16:00",
+      "video_url": "4430570_0_1556595171205340"
+    },
+    {
+      "title": "Class-12 || Ratio",
+      "id": "4430567",
+      "date": "27-Apr-2024 16:00",
+      "video_url": "4430567_0_1132622856332025"
+    },
+    {
+      "title": "Class-11 || Ratio",
+      "id": "4430564",
+      "date": "26-Apr-2024 16:00",
+      "video_url": "4430564_0_5109934153535199"
+    },
+    {
+      "title": "Class-10 || Ratio",
+      "id": "4430562",
+      "date": "25-Apr-2024 16:00",
+      "video_url": "4430562_0_5196605549432778"
+    },
+    {
+      "title": "Class-09 || Ratio",
+      "id": "4430560",
+      "date": "24-Apr-2024 16:00",
+      "video_url": "4430560_0_9695135763533893"
+    },
+    {
+      "title": "Class-08 || Ratio",
+      "id": "4430557",
+      "date": "23-Apr-2024 16:30",
+      "video_url": "4430557_0_7363497349686365"
+    },
+    {
+      "title": "Class-07 || Ratio",
+      "id": "4430554",
+      "date": "22-Apr-2024 16:00",
+      "video_url": "4430554_0_8702337246087982"
+    },
+    {
+      "title": "Class-05 || Ratio",
+      "id": "4430551",
+      "date": "17-Apr-2024 16:30",
+      "video_url": "4430551_0_5693743347141217"
+    },
+    {
+      "title": "Class-04 || Ratio",
+      "id": "4430549",
+      "date": "16-Apr-2024 16:00",
+      "video_url": "4430549_0_6990155182156161"
+    },
+    {
+      "title": "Class-03 || Ratio",
+      "id": "4430547",
+      "date": "15-Apr-2024 16:00",
+      "video_url": "4430547_0_9119565088680972"
+    },
+    {
+      "title": "Class-02 || Ratio",
+      "id": "4430545",
+      "date": "12-Apr-2024 16:30",
+      "video_url": "4430545_0_5595478831501984"
+    },
+    {
+      "title": "Class-1 || Ratio",
+      "id": "4430543",
+      "date": "11-Apr-2024 16:00",
+      "video_url": "4430543_0_2156939650330329"
+    },
+    {
+      "title": "Class-31 || Percentage",
+      "id": "4430541",
+      "date": "10-Apr-2024 16:30",
+      "video_url": "4430541_0_4972174796129994"
+    },
+    {
+      "title": "Class-30 || Percentage",
+      "id": "4430540",
+      "date": "09-Apr-2024 16:00",
+      "video_url": "4430540_0_7346691526171506"
+    },
+    {
+      "title": "Class-29 || Percentage",
+      "id": "4430538",
+      "date": "08-Apr-2024 16:30",
+      "video_url": "4430538_0_7946290991655130"
+    },
+    {
+      "title": "Class-28 || Percentage",
+      "id": "4430536",
+      "date": "04-Apr-2024 16:00",
+      "video_url": "4430536_0_9874385188196387"
+    },
+    {
+      "title": "Class-26 || Percentage",
+      "id": "4430533",
+      "date": "02-Apr-2024 16:00",
+      "video_url": "4430533_0_7103964638038849"
+    },
+    {
+      "title": "Class-25 || Percentage",
+      "id": "4430531",
+      "date": "01-Apr-2024 16:00",
+      "video_url": "4430531_0_2861604224472002"
+    },
+    {
+      "title": "Class-24 || Percentage",
+      "id": "4430529",
+      "date": "29-Mar-2024 16:30",
+      "video_url": "4430529_0_9332646147577909"
+    },
+    {
+      "title": "Class-23 || Percentage",
+      "id": "4430528",
+      "date": "28-Mar-2024 16:00",
+      "video_url": "4430528_0_5612888997493029"
+    },
+    {
+      "title": "Class-22 || Percentage",
+      "id": "4430526",
+      "date": "27-Mar-2024 16:00",
+      "video_url": "4430526_0_7702863643604505"
+    },
+    {
+      "title": "Class-21 || Percentage",
+      "id": "4430523",
+      "date": "22-Mar-2024 16:30",
+      "video_url": "4430523_0_8747865338834083"
+    },
+    {
+      "title": "Class-20 || Percentage",
+      "id": "4430521",
+      "date": "21-Mar-2024 16:00",
+      "video_url": "4430521_0_2595205616796260"
+    },
+    {
+      "title": "Class-19 || Percentage",
+      "id": "4430520",
+      "date": "20-Mar-2024 16:00",
+      "video_url": "4430520_0_4940069808181257"
+    },
+    {
+      "title": "Class-17 || Percentage",
+      "id": "4430518",
+      "date": "18-Mar-2024 16:00",
+      "video_url": "4430518_0_7152541020945707"
+    },
+    {
+      "title": "Class-16 || Percentage",
+      "id": "4430516",
+      "date": "15-Mar-2024 16:00",
+      "video_url": "4430516_0_2179315996224651"
+    },
+    {
+      "title": "Class-15 || Percentage",
+      "id": "4430514",
+      "date": "14-Mar-2024 16:00",
+      "video_url": "4430514_0_4213253029818685"
+    },
+    {
+      "title": "Class-13 || Percentage",
+      "id": "4430510",
+      "date": "11-Mar-2024 16:00",
+      "video_url": "4430510_0_8452219997626706"
+    },
+    {
+      "title": "Class-12 || Percentage",
+      "id": "4430508",
+      "date": "08-Mar-2024 16:30",
+      "video_url": "4430508_0_4294855747419866"
+    },
+    {
+      "title": "Class-11 || Percentage",
+      "id": "4430506",
+      "date": "07-Mar-2024 16:30",
+      "video_url": "4430506_0_6112227286080671"
+    },
+    {
+      "title": "Class-10 || Percentage",
+      "id": "4430505",
+      "date": "06-Mar-2024 16:00",
+      "video_url": "4430505_0_6262615156277881"
+    },
+    {
+      "title": "Class-09 || Percentage",
+      "id": "4430504",
+      "date": "05-Mar-2024 16:00",
+      "video_url": "4430504_0_6827387435288512"
+    },
+    {
+      "title": "Class-08 || Percentage",
+      "id": "4430503",
+      "date": "04-Mar-2024 16:00",
+      "video_url": "4430503_0_8863550103164654"
+    },
+    {
+      "title": "Class-07 || Percentage",
+      "id": "4430502",
+      "date": "01-Mar-2024 16:00",
+      "video_url": "4430502_0_5169192290993558"
+    },
+    {
+      "title": "Class-06 || Percentage",
+      "id": "4430501",
+      "date": "29-Feb-2024 16:30",
+      "video_url": "4430501_0_1803927734527775"
+    },
+    {
+      "title": "Class-05 || Percentage",
+      "id": "4430500",
+      "date": "28-Feb-2024 16:00",
+      "video_url": "4430500_0_8894670106260102"
+    },
+    {
+      "title": "Class-04 || Percentage",
+      "id": "4430499",
+      "date": "27-Feb-2024 16:00",
+      "video_url": "4430499_0_2292880054344590"
+    },
+    {
+      "title": "Class-03 || Percentage",
+      "id": "4430498",
+      "date": "26-Feb-2024 16:00",
+      "video_url": "4430498_0_7816764104925498"
+    },
+    {
+      "title": "Class-02 || Percentage",
+      "id": "4430497",
+      "date": "23-Feb-2024 16:00",
+      "video_url": "4430497_0_9892923978837799"
+    },
+    {
+      "title": "Class -1 || Percentage",
+      "id": "4430495",
+      "date": "21-Feb-2024 16:00",
+      "video_url": "4430495_0_1773062587846208"
+    }
+  ],
+  "notes_total": 103,
+  "notes": [
+    {
+      "id": 474953,
+      "title": "DI  Sheet -2 (TABULAR DI  & LINE GRAPH)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679b2062835f0_DI_Sheet_2_TABULAR_DI_LINE_GRAPH_.pdf",
+      "date": "30-Jan-2025"
+    },
+    {
+      "id": 474500,
+      "title": "DI  Sheet -1 (PIE AND BAR CHART)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/679a189039d43_DI_Sheet_1_PIE_AND_BAR_CHART.pdf",
+      "date": "29-Jan-2025"
+    },
+    {
+      "id": 460444,
+      "title": "Complete Installment",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/677235355f1d0_DOC20230731WA0015..pdf",
+      "date": "30-Dec-2024"
+    },
+    {
+      "id": 460321,
+      "title": "Data Interpretation",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6729d4231ec10_66baf2b5a1a0465e9b9089de5e309860Data_Interpretationcrwill.pdf",
+      "date": "28-Dec-2024"
+    },
+    {
+      "id": 455440,
+      "title": "Compund Intrest Sheet-3",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6762a04062747_Compound_Interest_sheet_3.pdf",
+      "date": "18-Dec-2024"
+    },
+    {
+      "id": 454470,
+      "title": "Compound Interest sheet-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/675d0c630a731_Compound_Interest_sheet_2_2.pdf",
+      "date": "14-Dec-2024"
+    },
+    {
+      "id": 452134,
+      "title": "Compound Interest Sheet -1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67578f7b40d2a_Compound_Interest_Sheet_1.pdf",
+      "date": "10-Dec-2024"
+    },
+    {
+      "id": 450339,
+      "title": "Simple Interest Sheet-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/674d62b6b7382_Simple_Interest_Sheet_2.pdf",
+      "date": "02-Dec-2024"
+    },
+    {
+      "id": 448599,
+      "title": "Simple Interest Sheet-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67406d85a12c7_Simple_Interest_Sheet1compressed.pdf",
+      "date": "22-Nov-2024"
+    },
+    {
+      "id": 443476,
+      "title": "Mixture and Alligation Sheet -3",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/672e02e23f50c_Mixture_and_Alligation_Sheet_3.pdf",
+      "date": "08-Nov-2024"
+    },
+    {
+      "id": 443469,
+      "title": "Mixture and Alligation Sheet -2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/672e02934d041_Mixture_and_Alligation_Sheet_2.pdf",
+      "date": "08-Nov-2024"
+    },
+    {
+      "id": 440691,
+      "title": "Mixture and Alligation Sheet -1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6718dce9203bf_Mixture_and_Alligation_Sheet_1.pdf",
+      "date": "23-Oct-2024"
+    },
+    {
+      "id": 440343,
+      "title": "Problem on Ages",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/67161c40caa03_problem_on_ages_1.pdf",
+      "date": "21-Oct-2024"
+    },
+    {
+      "id": 437392,
+      "title": "Average Sheet 1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/670cae5a39f8e_Average_sheet_1.pdf",
+      "date": "14-Oct-2024"
+    },
+    {
+      "id": 433473,
+      "title": "Partnership Sheet",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66fa93f386568_Partnership_Sheet.pdf",
+      "date": "30-Sep-2024"
+    },
+    {
+      "id": 432708,
+      "title": "Dishonest Shopkeeper",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66fa6605374a0_Profit_and_Loss_Miscelleneaous371740crwill.pdf",
+      "date": "30-Sep-2024"
+    },
+    {
+      "id": 429425,
+      "title": "Discount Sheet -2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66ec0b24aa0bc_Discount_Sheet_2.pdf",
+      "date": "19-Sep-2024"
+    },
+    {
+      "id": 426733,
+      "title": "Discount Sheet -1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66e140819e02a_Discount Sheet.pdf",
+      "date": "11-Sep-2024"
+    },
+    {
+      "id": 422365,
+      "title": "Profit and Loss  Sheet-3",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66d6e2185b9f1_Profit and Loss  Sheet - 3.pdf",
+      "date": "03-Sep-2024"
+    },
+    {
+      "id": 419222,
+      "title": "Geometry Sheet- 5",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66d287447b17d_Geometry Sheet- 5.pdf",
+      "date": "31-Aug-2024"
+    },
+    {
+      "id": 418482,
+      "title": "Profit and Loss Sheet-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66cd7aa332a7c_Profit and Loss Sheet -2.pdf",
+      "date": "27-Aug-2024"
+    },
+    {
+      "id": 416207,
+      "title": "Race Sheet",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66bb084b412cc_6516b86da96f4_RACE   Sheet.pdf",
+      "date": "13-Aug-2024"
+    },
+    {
+      "id": 411748,
+      "title": "Profit and Loss Sheet-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66b6ffd03889a_Profit and Loss Sheet -1.pdf",
+      "date": "10-Aug-2024"
+    },
+    {
+      "id": 411113,
+      "title": "Problem on Ages",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66b3474e0388f_Problem on Ages.pdf",
+      "date": "07-Aug-2024"
+    },
+    {
+      "id": 410243,
+      "title": "Boat & Stream Sheet",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66acd1a97de06_Boat  and Stream Sheet.pdf",
+      "date": "02-Aug-2024"
+    },
+    {
+      "id": 398719,
+      "title": "Time, Speed and Distance Sheet-3",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/669b830adb160_Time, speed and Distance sheet-3.pdf",
+      "date": "20-Jul-2024"
+    },
+    {
+      "id": 392392,
+      "title": "Time, Speed and Distance Sheet-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/668ddd0f36f80_Time, Speed and Distance Sheet -2.pdf",
+      "date": "10-Jul-2024"
+    },
+    {
+      "id": 388679,
+      "title": "Time,Speed and Distance Sheet-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/667d571956a94_Time,Speed and Distance Sheet-1.pdf",
+      "date": "27-Jun-2024"
+    },
+    {
+      "id": 379676,
+      "title": "Pipes and Cistern Sheet",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/665e5d2c17252_Pipes and Cistern.pdf",
+      "date": "04-Jun-2024"
+    },
+    {
+      "id": 376145,
+      "title": "Time and work Sheet-3",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6655cc795bf4e_Time and work Sheet-3 (1).pdf",
+      "date": "28-May-2024"
+    },
+    {
+      "id": 372833,
+      "title": "Time and Work Sheet-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66434cfddb3dc_Time and Work Sheet- 2.pdf",
+      "date": "14-May-2024"
+    },
+    {
+      "id": 370600,
+      "title": "Time and  Work Sheet-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/663a1e9f912e4_Time and  Work Sheet- 1.pdf",
+      "date": "07-May-2024"
+    },
+    {
+      "id": 364493,
+      "title": "Ratio Sheet-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66307c0733e6f_RATIO -  2.pdf",
+      "date": "30-Apr-2024"
+    },
+    {
+      "id": 360836,
+      "title": "Ratio Sheet",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/661915ff655ca_Ratio  Sheet Final.pdf",
+      "date": "12-Apr-2024"
+    },
+    {
+      "id": 359127,
+      "title": "Percentage Sheet-3",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/660ee0d6b26d4_Percentage Sheet- 3.pdf",
+      "date": "04-Apr-2024"
+    },
+    {
+      "id": 351735,
+      "title": "Percentage Sheet- 2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65f97b338d52b_Percentage  Sheet- 2.pdf",
+      "date": "19-Mar-2024"
+    },
+    {
+      "id": 343591,
+      "title": "Percentage Sheet-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65d8e7772be61_Percentage Sheet- 1.pdf",
+      "date": "24-Feb-2024"
+    },
+    {
+      "id": 313244,
+      "title": "Follow Gagan Sir links on Social Media",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6556c3f3054b9_Follow Gagan Sir links on Social Media.pdf",
+      "date": "17-Nov-2023"
+    },
+    {
+      "id": 313137,
+      "title": "Syllabus",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6528f0160d6cb_64df3a7592489_GAGAN SIR.pdf",
+      "date": "16-Nov-2023"
+    },
+    {
+      "id": 441268,
+      "title": "Geometry Sheet -12 ,13, 14, 15",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/671db4ea85c12_ilovepdfmerged.pdf",
+      "date": "27-Oct-2024"
+    },
+    {
+      "id": 441247,
+      "title": "Permutation and Combination Sheet",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/671cafcdc285b_66b5a28e294326541ef40a762b6540cada5da5e652cf4ec7ac38Permutation_and_Combination.pdf",
+      "date": "26-Oct-2024"
+    },
+    {
+      "id": 441225,
+      "title": "Probability Sheet-3",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/671cacfcbe729_Probability_Sheet3_1.pdf",
+      "date": "26-Oct-2024"
+    },
+    {
+      "id": 440000,
+      "title": "Geometry Sheet-11",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6711f6dfa68d4_Geometry_sheet_11.pdf",
+      "date": "18-Oct-2024"
+    },
+    {
+      "id": 438819,
+      "title": "Average Sheet -2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6710b0ace8ca5_Average_Sheet_2.pdf",
+      "date": "17-Oct-2024"
+    },
+    {
+      "id": 437591,
+      "title": "Algebra Sheet-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/670d3cc25b454_Average_Sheet_2.pdf",
+      "date": "14-Oct-2024"
+    },
+    {
+      "id": 437268,
+      "title": "Geometry Sheet-10",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/670908314f9f3_Geometry_10_1.pdf",
+      "date": "11-Oct-2024"
+    },
+    {
+      "id": 436777,
+      "title": "Probability Sheet-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/670500aa470fd_Probability_Sheet2.pdf",
+      "date": "08-Oct-2024"
+    },
+    {
+      "id": 436770,
+      "title": "Probability Sheet-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6705004f5c36f_Probability_Sheet1.pdf",
+      "date": "08-Oct-2024"
+    },
+    {
+      "id": 436480,
+      "title": "Geometry Sheet-9",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6704c988d90e7_Geometry_Sheet9.pdf",
+      "date": "08-Oct-2024"
+    },
+    {
+      "id": 436468,
+      "title": "Algebra Sheet -1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6704c8fb9fe79_Average_sheet_1.pdf",
+      "date": "08-Oct-2024"
+    },
+    {
+      "id": 432317,
+      "title": "Geometry Sheet - 8",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66f63bb707cc7_Geometry_Sheet_8.pdf",
+      "date": "27-Sep-2024"
+    },
+    {
+      "id": 430852,
+      "title": "Geometry Sheet-7",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66f267887459c_Geometry_7.pdf",
+      "date": "24-Sep-2024"
+    },
+    {
+      "id": 426113,
+      "title": "Geometry Sheet-6",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66e032936d32c_Geometry Sheet-6.pdf",
+      "date": "10-Sep-2024"
+    },
+    {
+      "id": 446422,
+      "title": "Geometry Sheet- 5",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/673c2ad1e4292_66d287447b17dGeometry_Sheet_5.pdf",
+      "date": "19-Nov-2024"
+    },
+    {
+      "id": 418178,
+      "title": "Geometry Sheet-4",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66c8493a505d0_Geometry Sheet- 4.pdf",
+      "date": "23-Aug-2024"
+    },
+    {
+      "id": 411738,
+      "title": "Train Sheet",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66b6ff53cabfa_Train..pdf",
+      "date": "10-Aug-2024"
+    },
+    {
+      "id": 411279,
+      "title": "Geometry Sheet-3",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66b453d734da2_Geometry Sheet-3.pdf",
+      "date": "08-Aug-2024"
+    },
+    {
+      "id": 407654,
+      "title": "Mensuration Sheet-6",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66aa1f828a113_Mensuration Sheet-6_300165_crwill.pdf",
+      "date": "31-Jul-2024"
+    },
+    {
+      "id": 406053,
+      "title": "Geometry Sheet-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66a8a68362946_Geometry Sheet - 2.pdf",
+      "date": "30-Jul-2024"
+    },
+    {
+      "id": 406013,
+      "title": "Mensuration Sheet-5",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66a88467f32fa_Mensuration sheet -5.pdf",
+      "date": "30-Jul-2024"
+    },
+    {
+      "id": 399299,
+      "title": "Geometry Sheet-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/669f7417a02c0_Geometry Sheet - 1.pdf",
+      "date": "23-Jul-2024"
+    },
+    {
+      "id": 397949,
+      "title": "Mensuration Sheet - 04",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6697e03b27208_Mensuration Sheet- 4.pdf",
+      "date": "17-Jul-2024"
+    },
+    {
+      "id": 391796,
+      "title": "3D Mensuration  Sheet-3",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/668943f2b4ad6_3D Mensuration  Sheet-3.pdf",
+      "date": "06-Jul-2024"
+    },
+    {
+      "id": 390951,
+      "title": "3D Mensuration Sheet-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66849b4cb16bf_3D Mensuration 2.pdf",
+      "date": "03-Jul-2024"
+    },
+    {
+      "id": 387057,
+      "title": "3D Mensuration Sheet-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6675169d60f01_3D Mensuration Sheet-1.pdf",
+      "date": "21-Jun-2024"
+    },
+    {
+      "id": 386260,
+      "title": "Number System Practice Sheet",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/667287b351fdd_645b67c62a41b_number system practice sheet.pdf",
+      "date": "19-Jun-2024"
+    },
+    {
+      "id": 386254,
+      "title": "Number System Sheet-10",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/667287560d6fa_Number System Sheet-10.pdf",
+      "date": "19-Jun-2024"
+    },
+    {
+      "id": 386248,
+      "title": "Number System Sheet-9 (Factors)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6672871b55246_Number System Sheet-9 (Factors).pdf",
+      "date": "19-Jun-2024"
+    },
+    {
+      "id": 386242,
+      "title": "Number System Sheet-8",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/667286bab8af4_Number System Sheet-8.pdf",
+      "date": "19-Jun-2024"
+    },
+    {
+      "id": 386236,
+      "title": "Number System Sheet-7",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6672867e50d9e_Number System Sheet-7.pdf",
+      "date": "19-Jun-2024"
+    },
+    {
+      "id": 386230,
+      "title": "Number Sheet-6 (Series)",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/667286394422a_Number Sheet-6 (Series).pdf",
+      "date": "19-Jun-2024"
+    },
+    {
+      "id": 386224,
+      "title": "Number System Sheet-5",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/667285fe5c822_Number System Sheet-5.pdf",
+      "date": "19-Jun-2024"
+    },
+    {
+      "id": 379666,
+      "title": "2D Mensuration Sheet-4",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/665e5ca68aaa5_2D Mensuration-4.pdf",
+      "date": "04-Jun-2024"
+    },
+    {
+      "id": 379655,
+      "title": "Statistics Sheet",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/665e5b95ae42e_Statistics Sheet.pdf",
+      "date": "04-Jun-2024"
+    },
+    {
+      "id": 379644,
+      "title": "Statistics Sheet - with solutions",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/665e5b2446fe0_Statistics Sheet - with solutions.pdf",
+      "date": "04-Jun-2024"
+    },
+    {
+      "id": 375902,
+      "title": "Mensuration Sheet-3",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66547d75381a6_Mensuration Sheet-3.pdf",
+      "date": "27-May-2024"
+    },
+    {
+      "id": 373667,
+      "title": "2D Mensuration Sheet-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66483b5d8408b_2D Mensuration Sheet-2.pdf",
+      "date": "18-May-2024"
+    },
+    {
+      "id": 373350,
+      "title": "Maxima &  Minima",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66459282d0f82_Maxima &  Minima.pdf",
+      "date": "16-May-2024"
+    },
+    {
+      "id": 372823,
+      "title": "2D Mensuration Sheet-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66434c6d745c4_2D Mensuration Sheet -1.pdf",
+      "date": "14-May-2024"
+    },
+    {
+      "id": 368548,
+      "title": "Height and Distance Sheet",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6634ae7b1c5bf_Height and Distance Sheet (1).pdf",
+      "date": "03-May-2024"
+    },
+    {
+      "id": 364498,
+      "title": "HCF Sheet",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66307e18dd44c_HCF SHEET.pdf",
+      "date": "30-Apr-2024"
+    },
+    {
+      "id": 364485,
+      "title": "Trignometry Sheet-5",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/66307ba02e9f6_Trignometry Sheet-5.pdf",
+      "date": "30-Apr-2024"
+    },
+    {
+      "id": 363493,
+      "title": "Trigonometry Sheet-4",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6629eca1a9a38_Trigonometry Sheet  -4.pdf",
+      "date": "25-Apr-2024"
+    },
+    {
+      "id": 363104,
+      "title": "LCM Sheet-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6627462c44ee5_LCM SHEET  Sheet-1.pdf",
+      "date": "23-Apr-2024"
+    },
+    {
+      "id": 361383,
+      "title": "Trigonometry Sheet-3",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/661e071ee32ec_Trigonometry Sheet- 3.pdf",
+      "date": "16-Apr-2024"
+    },
+    {
+      "id": 360824,
+      "title": "Trigonometry Sheet-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6619143299d41_Trigonometry Sheet -2.pdf",
+      "date": "12-Apr-2024"
+    },
+    {
+      "id": 353364,
+      "title": "Trigonometry Sheet-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6602a73525a8a_Trigonometry Sheet- 1 (1).pdf",
+      "date": "26-Mar-2024"
+    },
+    {
+      "id": 348145,
+      "title": "Co-ordinate Geometry Sheet",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65e9f3a3d3ee0_Co-ordinate Geometry Sheet.pdf",
+      "date": "07-Mar-2024"
+    },
+    {
+      "id": 343599,
+      "title": "Surds and Indices Sheet-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65d8e8276f16c_Surds and Indices Sheet-2.pdf",
+      "date": "24-Feb-2024"
+    },
+    {
+      "id": 341533,
+      "title": "Surds and Indices Sheet-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65ccfe27ab340_Surds and Indices Sheet-1.pdf",
+      "date": "14-Feb-2024"
+    },
+    {
+      "id": 341497,
+      "title": "Calculation and Simplification Sheet-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65cc8125560f2_Calculation and Simplification Sheet-2.pdf",
+      "date": "14-Feb-2024"
+    },
+    {
+      "id": 333007,
+      "title": "Calculation and Simplification Sheet-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65affbccda800_Calculation and Simplification  Sheet-1.pdf",
+      "date": "23-Jan-2024"
+    },
+    {
+      "id": 331720,
+      "title": "Quadratic Equations Sheet-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/65a7f7de3b7fc_Quadratic Equation-1.pdf",
+      "date": "17-Jan-2024"
+    },
+    {
+      "id": 330008,
+      "title": "Number System Sheet-4",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/659fcbb818993_254716Number System Sheet-4_crwill.pdf",
+      "date": "11-Jan-2024"
+    },
+    {
+      "id": 329236,
+      "title": "Algebra Sheet-6",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/659c221687d71_Algebra Sheet -6.pdf",
+      "date": "08-Jan-2024"
+    },
+    {
+      "id": 327651,
+      "title": "Number System Sheet- 3",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6593fa1cae2be_Number System Sheet- 3.pdf",
+      "date": "02-Jan-2024"
+    },
+    {
+      "id": 327643,
+      "title": "Number System Sheet- 2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6593f99a95ca2_Number System Sheet- 2.pdf",
+      "date": "02-Jan-2024"
+    },
+    {
+      "id": 327638,
+      "title": "Algebra Sheet-5",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6593f78aa4d65_Algbera Sheet-5.pdf",
+      "date": "02-Jan-2024"
+    },
+    {
+      "id": 324178,
+      "title": "Number System Sheet-1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6585737d12589_Number  System Sheet-1.pdf",
+      "date": "22-Dec-2023"
+    },
+    {
+      "id": 324042,
+      "title": "Algebra Sheet-4",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6585341cde3ca_Algebra Sheet-4.pdf",
+      "date": "22-Dec-2023"
+    },
+    {
+      "id": 321046,
+      "title": "Algebra Sheet-3",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/6577288627915_Algebra Sheet-3.pdf",
+      "date": "11-Dec-2023"
+    },
+    {
+      "id": 319361,
+      "title": "Algebra Sheet-2",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/656e94b009544_Algebra sheet-2.pdf",
+      "date": "05-Dec-2023"
+    },
+    {
+      "id": 316771,
+      "title": "Algebra Sheet -1",
+      "url": "https://cwmediabkt99.crwilladmin.com/92013a99927c4842b0a70fbd6f064a95:crwilladmin/class-attachment/655feb36d237a_Algebra Sheet -1.pdf",
+      "date": "24-Nov-2023"
+    }
+  ]
+}
