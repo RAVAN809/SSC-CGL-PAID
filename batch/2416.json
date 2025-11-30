@@ -1,0 +1,49 @@
+{
+  "batch_id": 2416,
+  "topics": [
+    {
+      "id": 23936,
+      "topicName": "Live"
+    },
+    {
+      "id": 24039,
+      "topicName": "Notes"
+    },
+    {
+      "id": 24687,
+      "topicName": "Vocab Batch on YouTube"
+    },
+    {
+      "id": 25146,
+      "topicName": "VOD Class"
+    },
+    {
+      "id": 25147,
+      "topicName": "Vocab Class"
+    },
+    {
+      "id": 25158,
+      "topicName": "Syllabus"
+    },
+    {
+      "id": 25159,
+      "topicName": "Mixed & Previous Year Study Material"
+    },
+    {
+      "id": 25160,
+      "topicName": "Comprehension Study Material"
+    },
+    {
+      "id": 25161,
+      "topicName": "Vocab Batch on App"
+    },
+    {
+      "id": 25162,
+      "topicName": "Grammar Study Material"
+    },
+    {
+      "id": 28691,
+      "topicName": "Vocab"
+    }
+  ]
+}
