@@ -1,0 +1,29 @@
+{
+  "batch_id": 2308,
+  "topics": [
+    {
+      "id": 22537,
+      "topicName": "Physics"
+    },
+    {
+      "id": 22538,
+      "topicName": "Biology"
+    },
+    {
+      "id": 22508,
+      "topicName": "Maths"
+    },
+    {
+      "id": 22510,
+      "topicName": "Chemistry"
+    },
+    {
+      "id": 22512,
+      "topicName": "English"
+    },
+    {
+      "id": 22513,
+      "topicName": "SST"
+    }
+  ]
+}
