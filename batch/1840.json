@@ -1,0 +1,21 @@
+{
+  "batch_id": 1840,
+  "topics": [
+    {
+      "id": 15567,
+      "topicName": "Intro"
+    },
+    {
+      "id": 16375,
+      "topicName": "Mock Interview"
+    },
+    {
+      "id": 15577,
+      "topicName": "Interview Skills"
+    },
+    {
+      "id": 15741,
+      "topicName": "Interview Preparation"
+    }
+  ]
+}
