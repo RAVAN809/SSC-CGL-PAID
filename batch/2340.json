@@ -1,1 +1,62 @@
 {}
+{
+  "batch_id": 2340,
+  "topics": [
+    {
+      "id": 23093,
+      "topicName": "Syllabus"
+    },
+    {
+      "id": 23190,
+      "topicName": "Calculation Capsule"
+    },
+    {
+      "id": 23050,
+      "topicName": "Arithmetic"
+    },
+    {
+      "id": 23052,
+      "topicName": "Arith.Class Png"
+    },
+    {
+      "id": 23053,
+      "topicName": "Arith.Class Sheet"
+    },
+    {
+      "id": 23054,
+      "topicName": "Arith.Class Notes"
+    },
+    {
+      "id": 23119,
+      "topicName": "Apply Mathematics"
+    },
+    {
+      "id": 23106,
+      "topicName": "Adv Class Png"
+    },
+    {
+      "id": 23128,
+      "topicName": "Arith."
+    },
+    {
+      "id": 23136,
+      "topicName": "Adv Class Notes"
+    },
+    {
+      "id": 23171,
+      "topicName": "Advance"
+    },
+    {
+      "id": 23172,
+      "topicName": "Advance Maths"
+    },
+    {
+      "id": 23174,
+      "topicName": "Adv Class Sheet"
+    },
+    {
+      "id": 23450,
+      "topicName": "Practice Session"
+    }
+  ]
+}
