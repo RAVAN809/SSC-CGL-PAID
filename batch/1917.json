@@ -1,0 +1,61 @@
+{
+  "batch_id": 1917,
+  "topics": [
+    {
+      "id": 16493,
+      "topicName": "Maths (NCERT)"
+    },
+    {
+      "id": 16494,
+      "topicName": "Eng"
+    },
+    {
+      "id": 16495,
+      "topicName": "Phy"
+    },
+    {
+      "id": 16496,
+      "topicName": "Chem"
+    },
+    {
+      "id": 16497,
+      "topicName": "Bio"
+    },
+    {
+      "id": 16498,
+      "topicName": "Computer"
+    },
+    {
+      "id": 16499,
+      "topicName": "Hindi"
+    },
+    {
+      "id": 16500,
+      "topicName": "His"
+    },
+    {
+      "id": 16501,
+      "topicName": "Geo"
+    },
+    {
+      "id": 16502,
+      "topicName": "Eco"
+    },
+    {
+      "id": 16503,
+      "topicName": "Pol"
+    },
+    {
+      "id": 16504,
+      "topicName": "Mental Ability"
+    },
+    {
+      "id": 16505,
+      "topicName": "Sanskrit"
+    },
+    {
+      "id": 16516,
+      "topicName": "Test"
+    }
+  ]
+}
