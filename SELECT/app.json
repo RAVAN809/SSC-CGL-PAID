@@ -1,0 +1,42 @@
+{
+  "App": "Selection-way",
+  "Announcement": true,
+  "Announce_content": "<p>Dear Students, This is to inform you that SSC GD TARGET Batch classes are starting from tomorrow (10 Dec 2025). Your classes timetable has been uploaded. Thank You</p><p><br></p><p><br></p><p><br></p><p>प्रिय विद्यार्थियों, आपको सूचित किया जाता है कि SSC GD TARGET बैच की कक्षाएँ कल (10 दिसंबर) से शुरू हो रही हैं। आपकी कक्षाओं की समय-सारिणी अपलोड कर दी गई है। धन्यवाद।</p>",
+  
+  "Announcement_image": "https://khanglobalstudies.com/icons/anns/cp.png",
+  "Active": true,
+  "important_updates": true,
+  "Version": "2.0",
+
+  "Update": "https://ssc-cgl-paid.vercel.app/app_update/RWA.json",
+
+  "Join": true,
+  "Password": "VISHAL",
+
+  "App_lock": true,
+  "App_password": "https://ssc-cgl-paid.vercel.app/App/Users.json",
+
+  "Video_player": "https://ssc-cgl-paid.vercel.app?play={encodedUrl}&title&AppName",
+  "Video_player2": "https://ssc-cgl.vercel.app?play={SimpleUrl}&title&AppName",
+
+  "PDF_Viewer": "https://ssc-cgl-paid.vercel.app/pdfviewer?url={encodedUrl}&title&AppName",
+  "PDF_Viewer2": "https://sscl-paid.vercel.app/pdfviewer?url={SimpleUrl}&title&AppName",
+
+  "Pdf_downloader": "",
+  
+  "Video_Downloader": "https://ssc-cgl-download.vercel.app?url={encodedUrl}&title&AppName",
+  "Video_Downloader2": "https://ssc-cgl-download.vercel.app?url={encodedUrl}&title&AppName",
+
+  "App_Logo": "https://aihae.jiaia.png",
+
+  "JoinLink": "https://t.me/@hacker8090",
+
+  "Join_content": "<p>Dear Students, plese Join this Channel for backup</p><p><br></p><p><br></p><p><br></p><p>प्रिय विद्यार्थियों, आपको सूचित किया जाता है कि .... धन्यवाद।</p>",
+  "Join_image": "https://join-images.com/icons/anns/cp.png",
+
+  "Apps_G": "https://ssc-cgl-paid.vercel.app/appcontrol/open.json",
+
+  "Thumbnail_error_replace_image": "https://ssc-cgl.app/thumbnail-error-images.png",
+
+  "Add_on_app": "https://ssc-cgl-paid.vercel.app/appcontrol/open.json"
+}
