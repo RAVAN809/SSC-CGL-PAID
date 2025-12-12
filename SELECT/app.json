@@ -13,7 +13,7 @@
   "Join": false,
   "Password": "VISHAL",
 
-  "App_lock": true,
+  "App_lock": false,
   "App_password": "https://ssc-cgl-paid.vercel.app/App/Users.json",
 
   "Video_player": "https://ssc-cgl-paid.vercel.app?play={encodedUrl}&title&AppName",
