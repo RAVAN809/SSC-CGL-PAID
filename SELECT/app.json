@@ -10,7 +10,7 @@
 
   "Update": "https://ssc-cgl-paid.vercel.app/app_update/RWA.json",
 
-  "Join": true,
+  "Join": false,
   "Password": "VISHAL",
 
   "App_lock": true,
